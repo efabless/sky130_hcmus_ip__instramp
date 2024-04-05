@@ -1,10 +1,73 @@
-v {xschem version=3.4.5 file_version=1.2
+v {xschem version=3.1.0 file_version=1.2
 }
 G {}
 K {}
 V {}
 S {}
 E {}
+B 2 40 -670 840 -270 {flags=graph
+
+
+ypos1=0
+ypos2=2
+divy=5
+subdivy=1
+unity=1
+x1=0
+x2=0.1
+divx=5
+subdivx=1
+node=vout
+color=4
+dataset=-1
+unitx=1
+logx=0
+logy=0
+y1=-0.0001
+y2=9.7e-05}
+B 2 40 -250 840 150 {flags=graph
+y1=8.5e-05
+
+ypos1=0
+ypos2=2
+divy=5
+subdivy=1
+unity=1
+x1=0
+x2=0.1
+divx=5
+subdivx=1
+
+
+dataset=-1
+unitx=1
+logx=0
+logy=0
+color=8
+node=i(v.x1.v_ibias)
+y2=0.011}
+B 2 -780 -670 20 -270 {flags=graph
+
+
+ypos1=0
+ypos2=2
+divy=5
+subdivy=1
+unity=1
+x1=0
+x2=0.1
+divx=5
+subdivx=1
+
+
+dataset=-1
+unitx=1
+logx=0
+logy=0
+y1=-1e-06
+y2=1e-06
+color=7
+node=vin}
 N -150 -30 -130 -30 {
 lab=GND}
 N -130 -30 -130 -20 {
@@ -43,7 +106,11 @@ N -235 -60 -235 -30 {
 lab=#net3}
 N -235 -30 -210 -30 {
 lab=#net3}
-C {devices/vsource.sym} -520 -120 1 0 {name=V1 value="SIN (0 100u 10Hz)" savecurrent=false}
+N -60 -100 -60 -70 {
+lab=VOUT}
+N -60 -10 -60 20 {
+lab=GND}
+C {devices/vsource.sym} -520 -120 1 0 {name=V1 value="SIN (0 1u 50K)" savecurrent=false}
 C {devices/gnd.sym} -590 -100 0 0 {name=l1 lab=GND}
 C {devices/vsource.sym} -180 -30 3 0 {name=V2 value=-1.8 savecurrent=false}
 C {devices/gnd.sym} -130 -20 0 0 {name=l2 lab=GND}
@@ -51,12 +118,12 @@ C {devices/vsource.sym} -190 -160 3 0 {name=V3 value=1.8 savecurrent=false}
 C {devices/gnd.sym} -140 -150 0 0 {name=l3 lab=GND}
 C {devices/lab_wire.sym} -480 -120 0 0 {name=p1 sig_type=std_logic lab=VIN}
 C {devices/lab_wire.sym} -60 -100 0 0 {name=p2 sig_type=std_logic lab=VOUT}
-C {devices/code_shown.sym} -50 -60 0 0 {name=s1 only_toplevel=false value="
+C {devices/code_shown.sym} -500 10 0 0 {name=s1 only_toplevel=false value="
 .save all
 .control
-tran 1m 100m
+tran 1u 200u
 write opamp_inv.raw
-plot VOUT VIN
+*plot VOUT VIN
 .endc
 "}
 C {devices/res.sym} -430 -120 1 0 {name=R1
@@ -65,7 +132,7 @@ footprint=1206
 device=resistor
 m=1}
 C {devices/res.sym} -250 -220 1 0 {name=R2
-value=100k
+value=128k
 footprint=1206
 device=resistor
 m=1}
@@ -79,4 +146,14 @@ value="
 
 "
 spice_ignore=false}
-C {/foss/designs/chipalooza2024/sky130_hcmus_ip__instramp/xschem/opamp.sym} -170 -100 0 0 {name=x1}
+C {../xschem/opamp.sym} -170 -100 0 0 {name=x1}
+C {devices/launcher.sym} -570 -220 0 0 {name=h5
+descr="load waves" 
+tclcommand="xschem raw_read $netlist_dir/opamp_inv.raw tran"
+}
+C {devices/capa.sym} -60 -40 0 0 {name=C1
+m=1
+value=2p
+footprint=1206
+device="ceramic capacitor"}
+C {devices/gnd.sym} -60 20 0 0 {name=l5 lab=GND}

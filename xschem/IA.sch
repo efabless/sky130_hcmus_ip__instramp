@@ -1,4 +1,4 @@
-v {xschem version=3.4.5 file_version=1.2
+v {xschem version=3.1.0 file_version=1.2
 }
 G {}
 K {}
@@ -199,6 +199,6 @@ C {devices/ipin.sym} -1430 -490 0 0 {name=p17 lab=V1
 }
 C {devices/ipin.sym} -1430 -460 0 0 {name=p18 lab=V2
 }
-C {/foss/designs/chipalooza2024/sky130_hcmus_ip__instramp/xschem/opamp.sym} -1220 -940 0 0 {name=x1}
-C {/foss/designs/chipalooza2024/sky130_hcmus_ip__instramp/xschem/opamp.sym} -1220 -80 0 0 {name=x2}
-C {/foss/designs/chipalooza2024/sky130_hcmus_ip__instramp/xschem/opamp.sym} -530 -500 0 0 {name=x3}
+C {../xschem/opamp.sym} -1220 -940 0 0 {name=x1}
+C {../xschem/opamp.sym} -1220 -80 0 0 {name=x2}
+C {../xschem/opamp.sym} -530 -500 0 0 {name=x3}

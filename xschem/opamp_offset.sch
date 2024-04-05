@@ -1,4 +1,4 @@
-v {xschem version=3.4.5 file_version=1.2
+v {xschem version=3.1.0 file_version=1.2
 }
 G {}
 K {}
@@ -86,5 +86,5 @@ value="
 
 "
 spice_ignore=false}
-C {/foss/designs/chipalooza2024/sky130_hcmus_ip__instramp/xschem/opamp.sym} -255 -465 0 0 {name=x1}
-C {/foss/designs/chipalooza2024/sky130_hcmus_ip__instramp/xschem/opamp.sym} -265 -205 0 0 {name=x2}
+C {../xschem/opamp.sym} -255 -465 0 0 {name=x1}
+C {../xschem/opamp.sym} -265 -205 0 0 {name=x2}
