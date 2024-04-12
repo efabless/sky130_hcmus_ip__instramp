@@ -151,25 +151,8 @@ N -540 -1020 -540 -1000 {
 lab=D8}
 N -560 -1020 -560 -1000 {
 lab=D9}
-N -1140 -680 -1140 -660 {}
-C {sky130_fd_pr/res_xhigh_po.sym} -930 -940 1 0 {name=R11
-W=2
-L=1
-model=res_xhigh_po
-spiceprefix=X
-mult=1}
-C {sky130_fd_pr/res_xhigh_po.sym} -930 -80 3 0 {name=R15
-W=2
-L=1
-model=res_xhigh_po
-spiceprefix=X
-mult=1}
-C {sky130_fd_pr/res_xhigh_po.sym} -1140 -530 2 0 {name=R20
-W=2
-L=1
-model=res_xhigh_po
-spiceprefix=X
-mult=1}
+N -1140 -680 -1140 -660 {
+lab=#net3}
 C {devices/opin.sym} -280 -500 0 0 {name=p5 lab=VOUT}
 C {devices/iopin.sym} -280 -80 0 0 {name=p1 lab=G}
 C {devices/lab_wire.sym} -1495 -960 0 0 {name=p6 sig_type=std_logic lab=V2}
@@ -241,3 +224,18 @@ C {devices/opin.sym} -740 -300 0 0 {name=p39 lab=AVOUT2}
 C {devices/lab_wire.sym} -930 -1020 3 0 {name=p13 lab=G}
 C {devices/lab_wire.sym} -930 0 0 0 {name=p11 sig_type=std_logic lab=G}
 C {devices/lab_wire.sym} -1020 -470 0 0 {name=p12 sig_type=std_logic lab=G}
+C {sky130_fd_pr/res_high_po_0p69.sym} -930 -940 1 0 {name=R1
+L=1.23
+model=res_high_po_0p69
+spiceprefix=X
+mult=1}
+C {sky130_fd_pr/res_high_po_0p69.sym} -1140 -530 2 0 {name=R2
+L=1.23
+model=res_high_po_0p69
+spiceprefix=X
+mult=1}
+C {sky130_fd_pr/res_high_po_0p69.sym} -930 -80 3 0 {name=R3
+L=1.23
+model=res_high_po_0p69
+spiceprefix=X
+mult=1}

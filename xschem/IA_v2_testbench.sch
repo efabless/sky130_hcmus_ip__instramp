@@ -14,7 +14,7 @@ divy=5
 subdivy=1
 unity=1
 x1=0
-x2=0.0002
+x2=0.0001
 divx=5
 subdivx=1
 node="in1
@@ -27,14 +27,14 @@ logy=0
 hilight_wave=-1}
 B 2 620 -940 1740 -540 {flags=graph
 
-y2=0.0061
+y2=0.00765009
 ypos1=0
 ypos2=2
 
 subdivy=1
 unity=1
 x1=0
-x2=0.0002
+x2=0.0001
 divx=5
 subdivx=1
 
@@ -43,24 +43,25 @@ dataset=-1
 unitx=1
 logx=0
 logy=0
-hilight_wave=0
+hilight_wave=-1
 
 
 
 color=10
 node=vout
-divy=10
-y1=-0.0061}
+
+y1=0.00722789
+divy=5}
 B 2 620 -520 1740 -120 {flags=graph
-y1=-3.3e-06
-y2=3.3e-06
+y1=-5.2e-05
+y2=5.2e-05
 ypos1=0
 ypos2=2
 divy=5
 subdivy=1
 unity=1
 x1=0
-x2=0.0002
+x2=0.0001
 divx=5
 subdivx=1
 
@@ -72,15 +73,15 @@ logy=0
 color=7
 node=vout1}
 B 2 620 -100 1740 300 {flags=graph
-y1=-3.4e-06
-y2=3.4e-06
+y1=-5.4e-05
+y2=5.4e-05
 ypos1=0
 ypos2=2
 divy=5
 subdivy=1
 unity=1
 x1=0
-x2=0.0002
+x2=0.0001
 divx=5
 subdivx=1
 
@@ -252,7 +253,7 @@ C {devices/opin.sym} 420 -220 0 0 {name=p2 lab=VOUT1}
 C {devices/opin.sym} 420 -200 0 0 {name=p3 lab=VOUT2}
 C {devices/code_shown.sym} -520 -455 0 0 {name=s2 only_toplevel=false value=".control
 save all
-tran 1u 200u
+tran 0.1u 20u
 write IA_v2_testbench.raw
 .endc"}
 C {devices/lab_wire.sym} -510 -260 0 0 {name=p4 sig_type=std_logic lab=IN1}
@@ -277,16 +278,8 @@ C {devices/vsource.sym} 260 110 0 0 {name=VD8 value=-1.8}
 C {devices/gnd.sym} 260 160 0 0 {name=l14 lab=GND}
 C {devices/vsource.sym} 340 110 0 0 {name=VD9 value=-1.8}
 C {devices/gnd.sym} 340 160 0 0 {name=l15 lab=GND}
-C {devices/code.sym} -690 -480 0 0 {name=TT_MODELS
-only_toplevel=true
-format="tcleval( @value )"
-value="
-** opencircuitdesign pdks install
-.lib $::SKYWATER_MODELS/sky130.lib.spice tt
-
-"
-spice_ignore=false}
 C {devices/launcher.sym} -150 -420 0 0 {name=h5
 descr="load waves" 
 tclcommand="xschem raw_read $netlist_dir/IA_v2_testbench.raw tran"
 }
+C {sky130_fd_pr/corner.sym} -680 -30 0 0 {name=CORNER only_toplevel=true corner=tt}

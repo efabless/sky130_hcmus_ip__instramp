@@ -5,56 +5,30 @@ K {}
 V {}
 S {}
 E {}
-N 140 -60 240 -60 {
+N 260 -60 360 -60 {
 lab=#net1}
-N 340 -200 340 -60 {
+N 460 -200 460 -60 {
 lab=R1}
-N 140 -200 240 -200 {
+N 260 -200 360 -200 {
 lab=#net2}
-N 340 -340 340 -200 {
+N 460 -340 460 -200 {
 lab=R1}
-N 140 -340 240 -340 {
+N 260 -340 360 -340 {
 lab=#net3}
-N 340 -480 340 -340 {
+N 460 -480 460 -340 {
 lab=R1}
-N 140 -480 240 -480 {
+N 260 -480 360 -480 {
 lab=#net4}
-N 340 -620 340 -480 {
+N 460 -620 460 -480 {
 lab=R1}
-N 140 -620 240 -620 {
+N 260 -620 360 -620 {
 lab=#net5}
-N 340 -760 340 -620 {
+N 460 -760 460 -620 {
 lab=R1}
-N 140 -760 240 -760 {
+N 260 -760 360 -760 {
 lab=R1}
 N 60 -760 80 -760 {
 lab=R2}
-N 110 -40 320 -40 {
-lab=VSS}
-N 110 -180 320 -180 {
-lab=VSS}
-N 110 -320 320 -320 {
-lab=VSS}
-N 110 -460 320 -460 {
-lab=VSS}
-N 110 -600 320 -600 {
-lab=VSS}
-N 110 -740 320 -740 {
-lab=VSS}
-N 380 -740 380 -40 {
-lab=VSS}
-N 380 -800 380 -780 {
-lab=VSS}
-N 270 -620 270 -600 {
-lab=VSS}
-N 270 -480 270 -460 {
-lab=VSS}
-N 270 -340 270 -320 {
-lab=VSS}
-N 270 -200 270 -180 {
-lab=VSS}
-N 270 -60 270 -40 {
-lab=VSS}
 N 20 -760 20 -60 {
 lab=R2}
 N 20 -60 80 -60 {
@@ -69,90 +43,56 @@ N 20 -200 80 -200 {
 lab=R2}
 N 20 -800 20 -760 {
 lab=R2}
-N 380 -780 380 -770 {
-lab=VSS}
-N 380 -770 380 -740 {
-lab=VSS}
 N 20 -760 60 -760 {
 lab=R2}
-N 240 -760 340 -760 {
+N 360 -760 460 -760 {
 lab=R1}
-N 300 -620 340 -620 {
+N 420 -620 460 -620 {
 lab=R1}
-N 300 -480 340 -480 {
+N 420 -480 460 -480 {
 lab=R1}
-N 300 -340 340 -340 {
+N 420 -340 460 -340 {
 lab=R1}
-N 300 -200 340 -200 {
+N 420 -200 460 -200 {
 lab=R1}
-N 300 -60 340 -60 {
+N 420 -60 460 -60 {
 lab=R1}
-N 320 -40 380 -40 {
-lab=VSS}
-N 320 -180 380 -180 {
-lab=VSS}
-N 320 -320 380 -320 {
-lab=VSS}
-N 320 -460 380 -460 {
-lab=VSS}
-N 320 -600 380 -600 {
-lab=VSS}
-N 320 -740 380 -740 {
-lab=VSS}
-N 270 -680 270 -660 {
+N 390 -680 390 -660 {
 lab=D0}
-N 270 -680 420 -680 {
+N 390 -680 540 -680 {
 lab=D0}
-N 270 -540 270 -520 {
+N 390 -540 390 -520 {
 lab=D1}
-N 270 -540 420 -540 {
+N 390 -540 540 -540 {
 lab=D1}
-N 270 -400 270 -380 {
+N 390 -400 390 -380 {
 lab=D2}
-N 270 -400 420 -400 {
+N 390 -400 540 -400 {
 lab=D2}
-N 270 -260 270 -240 {
+N 390 -260 390 -240 {
 lab=D3}
-N 270 -260 420 -260 {
+N 390 -260 540 -260 {
 lab=D3}
-N 270 -120 270 -100 {
+N 390 -120 390 -100 {
 lab=D4}
-N 270 -120 420 -120 {
+N 390 -120 540 -120 {
 lab=D4}
-N 340 -800 340 -760 {
+N 460 -800 460 -760 {
 lab=R1}
-C {sky130_fd_pr/res_xhigh_po.sym} 110 -60 3 0 {name=R1
-W=2
-L=4
-model=res_xhigh_po
-spiceprefix=X
-mult=1}
-C {sky130_fd_pr/res_xhigh_po.sym} 110 -340 3 0 {name=R4
-W=2
-L=16
-model=res_xhigh_po
-spiceprefix=X
-mult=1}
-C {sky130_fd_pr/res_xhigh_po.sym} 110 -480 3 0 {name=R5
-W=2
-L=32
-model=res_xhigh_po
-spiceprefix=X
-mult=1}
-C {sky130_fd_pr/res_xhigh_po.sym} 110 -620 3 0 {name=R6
-W=2
-L=64
-model=res_xhigh_po
-spiceprefix=X
-mult=1}
-C {sky130_fd_pr/res_xhigh_po.sym} 110 -760 3 0 {name=R7
-W=2
-L=64
-model=res_xhigh_po
-spiceprefix=X
-mult=1}
-C {devices/ipin.sym} 380 -800 1 0 {name=p1 lab=VSS}
-C {sky130_fd_pr/nfet_g5v0d10v5.sym} 270 -640 3 1 {name=M2
+N 170 -720 500 -720 {}
+N 170 -580 500 -580 {}
+N 390 -620 390 -580 {}
+N 170 -440 500 -440 {}
+N 390 -480 390 -440 {}
+N 170 -300 500 -300 {}
+N 390 -340 390 -300 {}
+N 170 -160 500 -160 {}
+N 390 -200 390 -160 {}
+N 170 -20 500 -20 {}
+N 390 -60 390 -20 {}
+N 500 -800 500 -20 {}
+C {devices/ipin.sym} 500 -800 1 0 {name=p1 lab=VSS}
+C {sky130_fd_pr/nfet_g5v0d10v5.sym} 390 -640 3 1 {name=M2
 L=0.5
 W=5
 nf=1
@@ -166,7 +106,7 @@ sa=0 sb=0 sd=0
 model=nfet_g5v0d10v5
 spiceprefix=X
 }
-C {sky130_fd_pr/nfet_g5v0d10v5.sym} 270 -500 3 1 {name=M3
+C {sky130_fd_pr/nfet_g5v0d10v5.sym} 390 -500 3 1 {name=M3
 L=0.5
 W=5
 nf=1
@@ -180,7 +120,7 @@ sa=0 sb=0 sd=0
 model=nfet_g5v0d10v5
 spiceprefix=X
 }
-C {sky130_fd_pr/nfet_g5v0d10v5.sym} 270 -360 3 1 {name=M4
+C {sky130_fd_pr/nfet_g5v0d10v5.sym} 390 -360 3 1 {name=M4
 L=0.5
 W=5
 nf=1
@@ -194,7 +134,7 @@ sa=0 sb=0 sd=0
 model=nfet_g5v0d10v5
 spiceprefix=X
 }
-C {sky130_fd_pr/nfet_g5v0d10v5.sym} 270 -220 3 1 {name=M5
+C {sky130_fd_pr/nfet_g5v0d10v5.sym} 390 -220 3 1 {name=M5
 L=0.5
 W=5
 nf=1
@@ -208,7 +148,7 @@ sa=0 sb=0 sd=0
 model=nfet_g5v0d10v5
 spiceprefix=X
 }
-C {sky130_fd_pr/nfet_g5v0d10v5.sym} 270 -80 3 1 {name=M6
+C {sky130_fd_pr/nfet_g5v0d10v5.sym} 390 -80 3 1 {name=M6
 L=0.5
 W=5
 nf=1
@@ -223,16 +163,16 @@ model=nfet_g5v0d10v5
 spiceprefix=X
 }
 C {devices/iopin.sym} 20 -800 3 0 {name=p2 lab=R2}
-C {devices/ipin.sym} 420 -680 0 1 {name=p3 lab=D0}
-C {devices/ipin.sym} 420 -540 0 1 {name=p4 lab=D1}
-C {devices/ipin.sym} 420 -400 0 1 {name=p5 lab=D2
+C {devices/ipin.sym} 540 -680 0 1 {name=p3 lab=D0}
+C {devices/ipin.sym} 540 -540 0 1 {name=p4 lab=D1}
+C {devices/ipin.sym} 540 -400 0 1 {name=p5 lab=D2
 }
-C {devices/ipin.sym} 420 -260 0 1 {name=p6 lab=D3}
-C {devices/ipin.sym} 420 -120 0 1 {name=p7 lab=D4}
-C {sky130_fd_pr/res_xhigh_po.sym} 110 -200 3 0 {name=R2
-W=2
-L=8
-model=res_xhigh_po
-spiceprefix=X
-mult=1}
-C {devices/iopin.sym} 340 -800 3 0 {name=p8 lab=R1}
+C {devices/ipin.sym} 540 -260 0 1 {name=p6 lab=D3}
+C {devices/ipin.sym} 540 -120 0 1 {name=p7 lab=D4}
+C {devices/iopin.sym} 460 -800 3 0 {name=p8 lab=R1}
+C {/foss/designs/sky130_hcmus_ip__instramp/xschem/Res_64K.sym} 260 -840 2 0 {name=x1}
+C {/foss/designs/sky130_hcmus_ip__instramp/xschem/Res_64K.sym} 260 -700 2 0 {name=x2}
+C {/foss/designs/sky130_hcmus_ip__instramp/xschem/Res_32K.sym} 260 -560 2 0 {name=x3}
+C {/foss/designs/sky130_hcmus_ip__instramp/xschem/Res_16K.sym} 260 -440 2 0 {name=x4}
+C {/foss/designs/sky130_hcmus_ip__instramp/xschem/Res_8K.sym} 260 -300 2 0 {name=x5}
+C {/foss/designs/sky130_hcmus_ip__instramp/xschem/Res_4K.sym} 280 -100 2 0 {name=x6}
