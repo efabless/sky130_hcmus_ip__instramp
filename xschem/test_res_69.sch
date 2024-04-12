@@ -35,9 +35,9 @@ lab=GND}
 N 40 -120 80 -120 {
 lab=GND}
 N -50 -240 -20 -240 {
-lab=#net2}
+lab=Vin}
 N -50 -240 -50 -200 {
-lab=#net2}
+lab=Vin}
 N 40 -240 80 -240 {
 lab=#net1}
 N 80 -240 80 -220 {
@@ -45,18 +45,19 @@ lab=#net1}
 N -50 -140 -50 -100 {
 lab=GND}
 C {sky130_fd_pr/res_high_po_0p69.sym} 80 -170 0 0 {name=R1
-L=1.23
+L=2.41
 model=res_high_po_0p69
 spiceprefix=X
 mult=1}
 C {devices/gnd.sym} 80 -100 0 0 {name=l1 lab=GND}
-C {devices/vsource.sym} -50 -170 0 0 {name=V1 value=3}
+C {devices/vsource.sym} -50 -170 0 0 {name=V1 value=1}
 C {devices/code_shown.sym} 240 -105 0 0 {name=s2 only_toplevel=false value=".lib /foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__res_high_po_0p69.model.spice
 .control
 save all
 tran 0.1u 200u
+let res = \{v(vin)/i(v_ires)\}
 write test_res_69.raw
-meas tran iref find i(v_ires) at=100u
+meas tran R1 find res at=100u
 .endc"}
 C {devices/launcher.sym} 730 -150 0 0 {name=h5
 descr="load waves" 
@@ -73,3 +74,4 @@ value="
 spice_ignore=false}
 C {devices/ammeter.sym} 10 -240 3 0 {name=V_ires}
 C {devices/gnd.sym} -50 -100 0 0 {name=l2 lab=GND}
+C {devices/lab_pin.sym} -50 -240 0 0 {name=p1 sig_type=std_logic lab=Vin}

@@ -256,29 +256,25 @@ C {devices/ipin.sym} -370 70 0 0 {name=p3 lab=V2
 C {devices/ipin.sym} 0 70 2 0 {name=p4 lab=V1
 }
 C {devices/opin.sym} 170 80 0 0 {name=p5 lab=VOUT}
-C {sky130_fd_pr/res_high_po.sym} -520 -170 0 0 {name=R3
-W=1
-L=30
-model=res_high_po
-spiceprefix=X
-mult=1}
-C {sky130_fd_pr/res_high_po.sym} -520 -70 0 0 {name=R1
-W=1
-L=30
-model=res_high_po
-spiceprefix=X
-mult=1}
-C {sky130_fd_pr/res_high_po.sym} -520 30 0 0 {name=R2
-W=1
-L=30
-model=res_high_po
-spiceprefix=X
-mult=1}
-C {sky130_fd_pr/res_high_po.sym} 70 -60 1 0 {name=R4
-W=1
-L=5
-model=res_high_po
-spiceprefix=X
-mult=1}
 C {sky130_fd_pr/cap_mim_m3_1.sym} -10 -60 1 0 {name=C1 model=cap_mim_m3_1 W=5.5 L=10 MF=10 spiceprefix=X}
 C {devices/ammeter.sym} -520 150 0 0 {name=V_ibias}
+C {sky130_fd_pr/res_high_po_0p69.sym} -520 -170 0 0 {name=R5
+L=18.58
+model=res_high_po_0p69
+spiceprefix=X
+mult=1}
+C {sky130_fd_pr/res_high_po_0p69.sym} -520 -70 0 0 {name=R1
+L=18.58
+model=res_high_po_0p69
+spiceprefix=X
+mult=1}
+C {sky130_fd_pr/res_high_po_0p69.sym} -520 30 0 0 {name=R2
+L=18.58
+model=res_high_po_0p69
+spiceprefix=X
+mult=1}
+C {sky130_fd_pr/res_high_po_0p69.sym} 70 -60 1 0 {name=R3
+L=2.41
+model=res_high_po_0p69
+spiceprefix=X
+mult=1}

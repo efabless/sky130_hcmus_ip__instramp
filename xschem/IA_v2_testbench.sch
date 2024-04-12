@@ -13,8 +13,8 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=0
-x2=0.0001
+x1=5.15349e-06
+x2=6.65051e-06
 divx=5
 subdivx=1
 node="in1
@@ -27,14 +27,14 @@ logy=0
 hilight_wave=-1}
 B 2 620 -940 1740 -540 {flags=graph
 
-y2=0.00765009
+y2=0.00698297
 ypos1=0
 ypos2=2
 
 subdivy=1
 unity=1
-x1=0
-x2=0.0001
+x1=5.15349e-06
+x2=6.65051e-06
 divx=5
 subdivx=1
 
@@ -50,7 +50,7 @@ hilight_wave=-1
 color=10
 node=vout
 
-y1=0.00722789
+y1=0.00687966
 divy=5}
 B 2 620 -520 1740 -120 {flags=graph
 y1=-5.2e-05
@@ -60,8 +60,8 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=0
-x2=0.0001
+x1=5.15349e-06
+x2=6.65051e-06
 divx=5
 subdivx=1
 
@@ -80,8 +80,8 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=0
-x2=0.0001
+x1=5.15349e-06
+x2=6.65051e-06
 divx=5
 subdivx=1
 
@@ -258,25 +258,25 @@ write IA_v2_testbench.raw
 .endc"}
 C {devices/lab_wire.sym} -510 -260 0 0 {name=p4 sig_type=std_logic lab=IN1}
 C {devices/lab_wire.sym} -340 -240 0 0 {name=p5 sig_type=std_logic lab=IN2}
-C {devices/vsource.sym} -380 110 0 0 {name=VD0 value=-1.8}
+C {devices/vsource.sym} -380 110 0 0 {name=VD0 value=1.8}
 C {devices/gnd.sym} -380 160 0 0 {name=l6 lab=GND}
-C {devices/vsource.sym} -300 110 0 0 {name=VD1 value=-1.8}
+C {devices/vsource.sym} -300 110 0 0 {name=VD1 value=1.8}
 C {devices/gnd.sym} -300 160 0 0 {name=l7 lab=GND}
-C {devices/vsource.sym} -220 110 0 0 {name=VD2 value=-1.8}
+C {devices/vsource.sym} -220 110 0 0 {name=VD2 value=1.8}
 C {devices/gnd.sym} -220 160 0 0 {name=l8 lab=GND}
-C {devices/vsource.sym} -140 110 0 0 {name=VD3 value=-1.8}
+C {devices/vsource.sym} -140 110 0 0 {name=VD3 value=1.8}
 C {devices/gnd.sym} -140 160 0 0 {name=l9 lab=GND}
-C {devices/vsource.sym} -60 110 0 0 {name=VD4 value=-1.8}
+C {devices/vsource.sym} -60 110 0 0 {name=VD4 value=1.8}
 C {devices/gnd.sym} -60 160 0 0 {name=l10 lab=GND}
-C {devices/vsource.sym} 20 110 0 0 {name=VD5 value=-1.8}
+C {devices/vsource.sym} 20 110 0 0 {name=VD5 value=1.8}
 C {devices/gnd.sym} 20 160 0 0 {name=l11 lab=GND}
-C {devices/vsource.sym} 100 110 0 0 {name=VD6 value=-1.8}
+C {devices/vsource.sym} 100 110 0 0 {name=VD6 value=1.8}
 C {devices/gnd.sym} 100 160 0 0 {name=l12 lab=GND}
-C {devices/vsource.sym} 180 110 0 0 {name=VD7 value=-1.8}
+C {devices/vsource.sym} 180 110 0 0 {name=VD7 value=1.8}
 C {devices/gnd.sym} 180 160 0 0 {name=l13 lab=GND}
-C {devices/vsource.sym} 260 110 0 0 {name=VD8 value=-1.8}
+C {devices/vsource.sym} 260 110 0 0 {name=VD8 value=1.8}
 C {devices/gnd.sym} 260 160 0 0 {name=l14 lab=GND}
-C {devices/vsource.sym} 340 110 0 0 {name=VD9 value=-1.8}
+C {devices/vsource.sym} 340 110 0 0 {name=VD9 value=1.8}
 C {devices/gnd.sym} 340 160 0 0 {name=l15 lab=GND}
 C {devices/launcher.sym} -150 -420 0 0 {name=h5
 descr="load waves" 
