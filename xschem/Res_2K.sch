@@ -24,13 +24,13 @@ C {devices/iopin.sym} 320 -130 0 0 {name=p1 lab=R
 C {devices/iopin.sym} 80 -130 2 0 {name=p2 lab=RR
 }
 C {devices/ipin.sym} 120 -170 0 0 {name=p3 lab=VSS}
-C {sky130_fd_pr/res_high_po_0p69.sym} 140 -130 1 0 {name=R1
-L=1.23
+C {sky130_fd_pr/res_high_po_0p69.sym} 140 -130 1 0 {name=R2
+L=19.55
 model=res_high_po_0p69
 spiceprefix=X
-mult=1}
-C {sky130_fd_pr/res_high_po_0p69.sym} 260 -130 1 0 {name=R2
-L=1.23
+mult=10}
+C {sky130_fd_pr/res_high_po_0p69.sym} 260 -130 1 0 {name=R1
+L=19.55
 model=res_high_po_0p69
 spiceprefix=X
-mult=1}
+mult=10}
