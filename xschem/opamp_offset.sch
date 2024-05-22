@@ -5,6 +5,50 @@ K {}
 V {}
 S {}
 E {}
+B 2 160 -360 960 40 {flags=graph
+y1=1.7
+y2=1.8
+ypos1=0
+ypos2=2
+divy=5
+subdivy=1
+unity=1
+x1=-1.8
+x2=1.8
+divx=5
+subdivx=1
+xlabmag=1.0
+ylabmag=1.0
+node=vout0
+color=4
+dataset=-1
+unitx=1
+logx=0
+logy=0
+
+}
+B 2 160 -760 960 -360 {flags=graph
+y1=-1.9
+y2=1.8
+ypos1=0
+ypos2=2
+divy=5
+subdivy=1
+unity=1
+x1=-1.8
+x2=1.8
+divx=5
+subdivx=1
+xlabmag=1.0
+ylabmag=1.0
+node="vout1
+vout0"
+color="4 5"
+dataset=-1
+unitx=1
+logx=0
+logy=0
+}
 N -545 -185 -515 -185 {
 lab=GND}
 N -545 -185 -545 -155 {
@@ -67,7 +111,7 @@ C {devices/lab_wire.sym} -205 -465 0 0 {name=p2 sig_type=std_logic lab=VOUT1}
 C {devices/lab_wire.sym} -420 -485 0 0 {name=p3 sig_type=std_logic lab=VIN1}
 C {devices/lab_wire.sym} -430 -185 0 0 {name=p4 sig_type=std_logic lab=VIN0}
 C {devices/vsource.sym} -350 -575 1 0 {name=V4 value=1.8 savecurrent=false}
-C {devices/code_shown.sym} -125 -470 0 0 {name=s1 only_toplevel=false value="
+C {devices/code_shown.sym} -195 -560 0 0 {name=s1 only_toplevel=false value="
 .control
 save all
 *tran 1m 100m
@@ -75,8 +119,9 @@ dc V3 -1.8 1.8 1m
 write v3_offset.raw
 dc V6 -1.8 1.8 1m
 write v6_offset.raw
+write opamp_offset.raw
 .endc
-"}
+"f}
 C {devices/code.sym} -690 -310 0 0 {name=TT_MODELS
 only_toplevel=true
 format="tcleval( @value )"
@@ -86,5 +131,9 @@ value="
 
 "
 spice_ignore=false}
-C {/foss/designs/chipalooza2024/sky130_hcmus_ip__instramp/xschem/opamp.sym} -255 -465 0 0 {name=x1}
-C {/foss/designs/chipalooza2024/sky130_hcmus_ip__instramp/xschem/opamp.sym} -265 -205 0 0 {name=x2}
+C {../xschem/opamp.sym} -255 -465 0 0 {name=x1}
+C {../xschem/opamp.sym} -265 -205 0 0 {name=x2}
+C {devices/launcher.sym} -160 -270 0 0 {name=h5
+descr="load waves" 
+tclcommand="xschem raw_read $netlist_dir/opamp_offset.raw dc"
+}
