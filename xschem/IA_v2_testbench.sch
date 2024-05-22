@@ -1,11 +1,187 @@
-v {xschem version=3.1.0 file_version=1.2
+v {xschem version=3.4.5 file_version=1.2
 }
 G {}
 K {}
 V {}
 S {}
 E {}
-B 2 1100 -1870 2230 -1470 {flags=graph
+B 2 1060 -1860 1860 -1460 {flags=graph
+y1=-0.017
+y2=0.017
+ypos1=0
+ypos2=2
+divy=5
+subdivy=1
+unity=1
+x1=0
+x2=0.01
+divx=5
+subdivx=1
+xlabmag=1.0
+ylabmag=1.0
+node=vout
+color=4
+dataset=-1
+unitx=1
+logx=0
+logy=0
+}
+B 2 1900 -1860 2700 -1460 {flags=graph
+y1=-0.00013
+y2=0.00013
+ypos1=0
+ypos2=2
+divy=5
+subdivy=1
+unity=1
+x1=0
+x2=0.01
+divx=5
+subdivx=1
+xlabmag=1.0
+ylabmag=1.0
+node="vout1
+vout2"
+color="4 5"
+dataset=-1
+unitx=1
+logx=0
+logy=0
+}
+B 2 2720 -1430 3520 -1030 {flags=graph
+y1=-3.8e-15
+y2=3.8e-15
+ypos1=0
+ypos2=2
+divy=5
+subdivy=1
+unity=1
+x1=0
+x2=0.01
+divx=5
+subdivx=1
+xlabmag=1.0
+ylabmag=1.0
+
+
+dataset=-1
+unitx=1
+logx=0
+logy=0
+
+color=6
+node=i(v.x1.x1.vmeas2)}
+B 2 2720 -1860 3520 -1460 {flags=graph
+y1=-3.8e-15
+y2=3.8e-15
+ypos1=0
+ypos2=2
+divy=5
+subdivy=1
+unity=1
+x1=0
+x2=0.01
+divx=5
+subdivx=1
+xlabmag=1.0
+ylabmag=1.0
+
+
+dataset=-1
+unitx=1
+logx=0
+logy=0
+
+color=5
+node=i(v.x1.x1.vmeas1)}
+B 2 3550 -1860 4350 -1460 {flags=graph
+y1=-6.4e-11
+y2=6.4e-11
+ypos1=0
+ypos2=2
+divy=5
+subdivy=1
+unity=1
+x1=0
+x2=0.01
+divx=5
+subdivx=1
+xlabmag=1.0
+ylabmag=1.0
+node=i(v.x1.x1.vmeas)
+color=4
+dataset=-1
+unitx=1
+logx=0
+logy=0
+}
+B 2 3550 -1430 4350 -1030 {flags=graph
+y1=-2.4e-10
+y2=2.4e-10
+ypos1=0
+ypos2=2
+divy=5
+subdivy=1
+unity=1
+x1=0
+x2=0.01
+divx=5
+subdivx=1
+xlabmag=1.0
+ylabmag=1.0
+
+
+dataset=-1
+unitx=1
+logx=0
+logy=0
+
+
+color=8
+node=i(v.x1.x1.vmeas3)}
+B 2 2720 -1000 3520 -600 {flags=graph
+y1=-3.8e-15
+y2=3.8e-15
+ypos1=0
+ypos2=2
+divy=5
+subdivy=1
+unity=1
+x1=0
+x2=0.01
+divx=5
+subdivx=1
+xlabmag=1.0
+ylabmag=1.0
+node=i(v.x1.x1.vmeas4)
+color=10
+dataset=-1
+unitx=1
+logx=0
+logy=0
+}
+B 2 3550 -1000 4350 -600 {flags=graph
+y1=-8.9e-10
+y2=9e-10
+ypos1=0
+ypos2=2
+divy=5
+subdivy=1
+unity=1
+x1=0
+x2=0.01
+divx=5
+subdivx=1
+xlabmag=1.0
+ylabmag=1.0
+node=i(v.x1.x1.vmeas5)
+color=12
+dataset=-1
+unitx=1
+logx=0
+logy=0
+}
+B 2 1900 -2270 2700 -1870 {flags=graph
 y1=-1e-06
 y2=1e-06
 ypos1=0
@@ -17,91 +193,16 @@ x1=0
 x2=0.01
 divx=5
 subdivx=1
+xlabmag=1.0
+ylabmag=1.0
 node="in1
 in2"
-color="4 6"
+color="4 5"
 dataset=-1
 unitx=1
 logx=0
 logy=0
-hilight_wave=-1}
-B 2 2440 -1860 3560 -1460 {flags=graph
-
-y2=0.0024
-ypos1=0
-ypos2=2
-
-subdivy=1
-unity=1
-x1=0
-x2=0.01
-divx=5
-subdivx=1
-
-
-dataset=-1
-unitx=1
-logx=0
-logy=0
-hilight_wave=0
-
-
-
-color=10
-node=vout
-
-y1=-0.0024
-divy=5}
-B 2 2440 -1440 3560 -1040 {flags=graph
-y1=-5.2e-05
-y2=5.1e-05
-ypos1=0
-ypos2=2
-divy=5
-subdivy=1
-unity=1
-x1=0
-x2=0.01
-divx=5
-subdivx=1
-
-
-dataset=-1
-unitx=1
-logx=0
-logy=0
-color="7 8"
-node="vout1
-vout2"}
-B 2 2440 -1020 3560 -620 {flags=graph
-y1=-5.5e-10
-y2=5.4e-10
-ypos1=0
-ypos2=2
-divy=5
-subdivy=1
-unity=1
-x1=0
-x2=0.01
-divx=5
-subdivx=1
-
-
-dataset=-1
-unitx=1
-logx=0
-logy=0
-
-
-rainbow=1
-color="4 18 6 7 10 8"
-node="i(v.x1.x1.vmeas5)
-i(v.x1.x1.vmeas4)
-i(v.x1.x1.vmeas3)
-i(v.x1.x1.vmeas2)
-i(v.x1.x1.vmeas1)
-i(v.x1.x1.vmeas)"
-hilight_wave=2}
+}
 N 1140 -1150 1140 -1110 {
 lab=#net1}
 N 1220 -1130 1220 -1110 {
@@ -246,7 +347,6 @@ N 2100 -850 2100 -770 {
 lab=#net10}
 N 2180 -870 2180 -770 {
 lab=#net11}
-C {/foss/designs/sky130_hcmus_ip__instramp/xschem/IA_v2.sym} 2070 -1020 0 0 {name=x1}
 C {devices/vsource.sym} 1140 -1080 0 0 {name=V1 value=1.8
 }
 C {devices/vsource.sym} 1220 -1080 0 0 {name=V2 value=-1.8}
@@ -272,9 +372,9 @@ write IA_v2_testbench.raw
 .endc"}
 C {devices/lab_wire.sym} 1330 -1110 0 0 {name=p4 sig_type=std_logic lab=IN1}
 C {devices/lab_wire.sym} 1500 -1090 0 0 {name=p5 sig_type=std_logic lab=IN2}
-C {devices/vsource.sym} 1460 -740 0 0 {name=VD0 value=1.8}
+C {devices/vsource.sym} 1460 -740 0 0 {name=VD0 value=0}
 C {devices/gnd.sym} 1460 -690 0 0 {name=l6 lab=GND}
-C {devices/vsource.sym} 1540 -740 0 0 {name=VD1 value=1.8}
+C {devices/vsource.sym} 1540 -740 0 0 {name=VD1 value=0}
 C {devices/gnd.sym} 1540 -690 0 0 {name=l7 lab=GND}
 C {devices/vsource.sym} 1620 -740 0 0 {name=VD2 value=0}
 C {devices/gnd.sym} 1620 -690 0 0 {name=l8 lab=GND}
@@ -282,18 +382,21 @@ C {devices/vsource.sym} 1700 -740 0 0 {name=VD3 value=0}
 C {devices/gnd.sym} 1700 -690 0 0 {name=l9 lab=GND}
 C {devices/vsource.sym} 1780 -740 0 0 {name=VD4 value=0}
 C {devices/gnd.sym} 1780 -690 0 0 {name=l10 lab=GND}
-C {devices/vsource.sym} 1860 -740 0 0 {name=VD5 value=1.8}
+C {devices/vsource.sym} 1860 -740 0 0 {name=VD5 value=0}
 C {devices/gnd.sym} 1860 -690 0 0 {name=l11 lab=GND}
-C {devices/vsource.sym} 1940 -740 0 0 {name=VD6 value=1.8}
+C {devices/vsource.sym} 1940 -740 0 0 {name=VD6 value=0}
 C {devices/gnd.sym} 1940 -690 0 0 {name=l12 lab=GND}
 C {devices/vsource.sym} 2020 -740 0 0 {name=VD7 value=0}
 C {devices/gnd.sym} 2020 -690 0 0 {name=l13 lab=GND}
 C {devices/vsource.sym} 2100 -740 0 0 {name=VD8 value=0}
-C {devices/gnd.sym} 2100 -690 0 0 {name=l14 lab=GND}
+C {devices/gnd.sym} 2100 -690 0 0 {name=l14 lab=GND
+value=0}
 C {devices/vsource.sym} 2180 -740 0 0 {name=VD9 value=0}
-C {devices/gnd.sym} 2180 -690 0 0 {name=l15 lab=GND}
+C {devices/gnd.sym} 2180 -690 0 0 {name=l15 lab=GND
+value=0}
 C {devices/launcher.sym} 2030 -1330 0 0 {name=h5
 descr="load waves" 
 tclcommand="xschem raw_read $netlist_dir/IA_v2_testbench.raw tran"
 }
 C {sky130_fd_pr/corner.sym} 1160 -880 0 0 {name=CORNER only_toplevel=true corner=tt}
+C {/home/caonam/OpenLane/FINALPROJECT/sky130_hcmus_ip__instramp/xschem/IA_v2.sym} 2070 -1020 0 0 {name=x1}

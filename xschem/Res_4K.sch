@@ -1,4 +1,4 @@
-v {xschem version=3.1.0 file_version=1.2
+v {xschem version=3.4.5 file_version=1.2
 }
 G {}
 K {}
@@ -17,10 +17,12 @@ N 330 -110 330 -90 {
 lab=VSS}
 N 190 -110 210 -110 {
 lab=VSS}
-N 70 -110 190 -110 {}
-N 110 -110 110 -90 {}
-C {/foss/designs/sky130_hcmus_ip__instramp/xschem/Res_2K.sym} 0 10 0 0 {name=x1}
-C {/foss/designs/sky130_hcmus_ip__instramp/xschem/Res_2K.sym} 220 10 0 0 {name=x2}
+N 70 -110 190 -110 {
+lab=VSS}
+N 110 -110 110 -90 {
+lab=VSS}
+C {../xschem/Res_2K.sym} 0 10 0 0 {name=x1}
+C {../xschem/Res_2K.sym} 220 10 0 0 {name=x2}
 C {devices/iopin.sym} 450 -50 0 0 {name=p1 lab=R
 }
 C {devices/iopin.sym} -10 -50 2 0 {name=p2 lab=RR

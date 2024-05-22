@@ -1,4 +1,4 @@
-v {xschem version=3.1.0 file_version=1.2
+v {xschem version=3.4.5 file_version=1.2
 }
 G {}
 K {}
@@ -14,7 +14,7 @@ divy=5
 subdivy=1
 unity=1
 x1=0
-x2=2e-05
+x2=0.001
 divx=5
 subdivx=1
 node=vout
@@ -23,10 +23,10 @@ dataset=-1
 unitx=1
 logx=0
 logy=0
-y1=-0.00063
+y1=-0.00062
 y2=0.00063}
 B 2 40 -250 840 150 {flags=graph
-y1=8.5e-05
+y1=6.1e-05
 
 ypos1=0
 ypos2=2
@@ -34,7 +34,7 @@ divy=5
 subdivy=1
 unity=1
 x1=0
-x2=2e-05
+x2=0.001
 divx=5
 subdivx=1
 
@@ -43,9 +43,13 @@ dataset=-1
 unitx=1
 logx=0
 logy=0
-color=8
-node=i(v.x1.v_ibias)
-y2=0.011}
+
+
+y2=8e-05
+color="4 5 10"
+node="i(v.x1.v_ibias)
+i(v.x1.v_ibias1)
+i(v.x1.v_iout)"}
 B 2 -780 -670 20 -270 {flags=graph
 
 
@@ -55,7 +59,7 @@ divy=5
 subdivy=1
 unity=1
 x1=0
-x2=2e-05
+x2=0.001
 divx=5
 subdivx=1
 
@@ -68,73 +72,87 @@ y1=-1e-05
 y2=1e-05
 color=7
 node=vin}
-N -150 -30 -130 -30 {
+N -150 60 -130 60 {
 lab=GND}
-N -130 -30 -130 -20 {
+N -130 60 -130 70 {
 lab=GND}
-N -160 -160 -140 -160 {
+N -160 -70 -140 -70 {
 lab=GND}
-N -140 -160 -140 -150 {
+N -140 -70 -140 -60 {
 lab=GND}
-N -400 -120 -320 -120 {
+N -400 -30 -320 -30 {
 lab=#net1}
-N -340 -220 -340 -120 {
+N -340 -130 -340 -30 {
 lab=#net1}
-N -100 -220 -100 -100 {
+N -100 -130 -100 -10 {
 lab=VOUT}
-N -490 -120 -460 -120 {
+N -490 -30 -460 -30 {
 lab=VIN}
-N -430 -80 -320 -80 {
+N -430 10 -320 10 {
 lab=GND}
-N -430 -80 -430 -60 {
+N -430 10 -430 30 {
 lab=GND}
-N -590 -120 -550 -120 {
+N -590 -30 -550 -30 {
 lab=GND}
-N -590 -120 -590 -100 {
+N -590 -30 -590 -10 {
 lab=GND}
-N -150 -100 -50 -100 {
+N -150 -10 -50 -10 {
 lab=VOUT}
-N -235 -160 -220 -160 {
+N -235 -70 -220 -70 {
 lab=#net2}
-N -235 -160 -235 -140 {
+N -235 -70 -235 -50 {
 lab=#net2}
-N -235 -60 -235 -30 {
+N -235 30 -235 60 {
 lab=#net3}
-N -235 -30 -210 -30 {
+N -235 60 -210 60 {
 lab=#net3}
+N -60 80 -60 110 {
+lab=GND}
+N -100 -150 -100 -130 {
+lab=VOUT}
+N -340 -150 -340 -130 {
+lab=#net1}
+N -120 -150 -100 -150 {
+lab=VOUT}
 N -60 -10 -60 20 {
-lab=GND}
-N -100 -240 -100 -220 {
 lab=VOUT}
-N -340 -240 -340 -220 {
+N -190 -150 -120 -150 {
+lab=VOUT}
+N -940 -100 -940 -80 {
+lab=GND}
+N -940 -100 -840 -100 {
+lab=GND}
+N -940 -180 -940 -160 {
+lab=V4}
+N -840 -180 -840 -160 {
+lab=#net4}
+N -940 -180 -900 -180 {
+lab=V4}
+N -340 -150 -250 -150 {
 lab=#net1}
-N -140 -200 -140 -160 {
-lab=GND}
-N -120 -240 -100 -240 {
-lab=VOUT}
-N -210 -200 -140 -200 {
-lab=GND}
-N -340 -240 -300 -240 {
-lab=#net1}
-N -430 -100 -430 -80 {
-lab=GND}
-N -60 -100 -60 -70 {
-lab=VOUT}
-C {devices/vsource.sym} -520 -120 1 0 {name=V1 value="SIN (0 1m 50K)" savecurrent=false}
-C {devices/gnd.sym} -590 -100 0 0 {name=l1 lab=GND}
-C {devices/vsource.sym} -180 -30 3 0 {name=V2 value=-1.8 savecurrent=false}
-C {devices/gnd.sym} -130 -20 0 0 {name=l2 lab=GND}
-C {devices/vsource.sym} -190 -160 3 0 {name=V3 value=1.8 savecurrent=false}
-C {devices/gnd.sym} -140 -150 0 0 {name=l3 lab=GND}
-C {devices/lab_wire.sym} -480 -120 0 0 {name=p1 sig_type=std_logic lab=VIN}
-C {devices/lab_wire.sym} -60 -100 0 0 {name=p2 sig_type=std_logic lab=VOUT}
-C {devices/code_shown.sym} -500 10 0 0 {name=s1 only_toplevel=false value=".save all
+N -900 50 -870 50 {
+lab=VSS}
+N -750 -170 -710 -170 {
+lab=VSS}
+C {devices/vsource.sym} -520 -30 1 0 {name=V1 value="SIN (0 10u 10K)" savecurrent=false}
+C {devices/gnd.sym} -590 -10 0 0 {name=l1 lab=GND}
+C {devices/vsource.sym} -180 60 3 0 {name=V2 value=-1.8 savecurrent=false}
+C {devices/gnd.sym} -130 70 0 0 {name=l2 lab=GND}
+C {devices/vsource.sym} -190 -70 3 0 {name=V3 value=1.8 savecurrent=false}
+C {devices/gnd.sym} -140 -60 0 0 {name=l3 lab=GND}
+C {devices/lab_wire.sym} -480 -30 0 0 {name=p1 sig_type=std_logic lab=VIN}
+C {devices/lab_wire.sym} -60 -10 0 0 {name=p2 sig_type=std_logic lab=VOUT}
+C {devices/code_shown.sym} -510 100 0 0 {name=s1 only_toplevel=false value=".save all
 .control
-tran 0.1u 20u
+tran 1u 1000u
+meas tran minv MIN v(VOUT) 
+meas tran maxv MAX v(VOUT)
+let gain = ((abs(maxv)+abs(minv))/(20e-6))
+print gain
 write opamp_inv.raw
 .endc"}
-C {devices/gnd.sym} -430 -60 0 0 {name=l4 lab=GND}
-C {devices/code.sym} -680 -5 0 0 {name=TT_MODELS
+C {devices/gnd.sym} -430 30 0 0 {name=l4 lab=GND}
+C {devices/code.sym} -700 65 0 0 {name=TT_MODELS
 only_toplevel=true
 format="tcleval( @value )"
 value="
@@ -143,20 +161,41 @@ value="
 
 "
 spice_ignore=false}
-C {../xschem/opamp.sym} -170 -100 0 0 {name=x1}
-C {devices/launcher.sym} -710 -240 0 0 {name=h5
+C {../xschem/opamp.sym} -170 -10 0 0 {name=x1}
+C {devices/launcher.sym} -510 -130 0 0 {name=h5
 descr="load waves" 
 tclcommand="xschem raw_read $netlist_dir/opamp_inv.raw tran"
 }
-C {devices/capa.sym} -60 -40 0 0 {name=C1
-m=1
-value=2p
+C {devices/gnd.sym} -60 110 0 0 {name=l5 lab=GND}
+C {devices/res.sym} -430 -30 1 0 {name=R1
+value=1k
 footprint=1206
-device="ceramic capacitor"}
-C {devices/gnd.sym} -60 20 0 0 {name=l5 lab=GND}
-C {/foss/designs/sky130_hcmus_ip__instramp/xschem/Res_64K.sym} -120 -320 2 0 {name=x2}
-C {sky130_fd_pr/res_high_po_0p69.sym} -430 -120 3 0 {name=R1
-L=1.23
+device=resistor
+m=1}
+C {devices/res.sym} -220 -150 1 0 {name=R2
+value=129k
+footprint=1206
+device=resistor
+m=1}
+C {devices/vsource.sym} -940 -130 0 0 {name=V4 value=1.8 savecurrent=false}
+C {devices/res.sym} -840 -130 0 0 {name=R3
+value=10Meg
+footprint=1206
+device=resistor
+m=1}
+C {devices/gnd.sym} -940 -80 0 0 {name=l6 lab=GND}
+C {devices/ammeter.sym} -870 -180 3 0 {name=Vmeas savecurrent=true}
+C {devices/lab_wire.sym} -930 -180 0 0 {name=p3 sig_type=std_logic lab=V4}
+C {sky130_fd_pr/cap_mim_m3_1.sym} -60 50 2 0 {name=C2 model=cap_mim_m3_1 W=6.9 L=6.9 MF=5 spiceprefix=X}
+C {sky130_fd_pr/res_high_po_0p69.sym} -750 -190 3 0 {name=R4
+L=129.40
 model=res_high_po_0p69
 spiceprefix=X
 mult=1}
+C {sky130_fd_pr/res_high_po_0p69.sym} -900 30 3 0 {name=R5
+L=129.40
+model=res_high_po_0p69
+spiceprefix=X
+mult=64}
+C {devices/lab_wire.sym} -880 50 0 0 {name=p4 sig_type=std_logic lab=VSS}
+C {devices/lab_wire.sym} -720 -170 0 0 {name=p5 sig_type=std_logic lab=VSS}

@@ -14,15 +14,13 @@ divy=5
 
 unity=1
 x1=0
-x2=0.0005
+x2=0.0003
 
 
 xlabmag=1.0
 ylabmag=1.0
-node="i(v.x1.v_ibias)
-i(v.x1.v_ibias1)
-i(v.x1.v_iout)"
-color="4 5 8"
+
+
 dataset=-1
 unitx=1
 logx=0
@@ -33,17 +31,21 @@ rainbow=0
 digital=0
 subdivy=1
 subdivx=1
-divx=5}
+divx=5
+color="4 5 10"
+node="i(v.x1.v_ibias)
+i(v.x1.v_ibias1)
+i(v.x1.v_iout)"}
 B 2 -1530 -420 -730 -20 {flags=graph
-y1=-0.00014
-y2=1.2e-06
+y1=-1e-06
+y2=1.1e-06
 ypos1=0
 ypos2=2
 divy=5
 
 unity=1
 x1=0
-x2=0.0005
+x2=0.0003
 
 
 xlabmag=1.0
@@ -109,7 +111,7 @@ C {devices/gnd.sym} -280 -40 0 0 {name=l3 lab=GND}
 C {devices/lab_wire.sym} -530 -120 0 0 {name=p1 sig_type=std_logic lab=VIN}
 C {devices/launcher.sym} -430 -620 0 0 {name=h5
 descr="load waves" 
-tclcommand="xschem raw_read $netlist_dir/buffer.raw tran"
+tclcommand="xschem raw_read $netlist_dir/opamp_buffer.raw tran"
 }
 C {devices/code.sym} -500 -570 0 0 {name=TT_MODELS
 only_toplevel=true
@@ -123,10 +125,10 @@ spice_ignore=false}
 C {devices/code_shown.sym} -640 -490 0 0 {name=s1 only_toplevel=false value="
 .control
 save all
-tran 1u 0.5m
-write buffer.raw
+tran 1u 0.3m
+write opamp_buffer.raw
 .endc
 "}
 C {/home/caonam/OpenLane/FINALPROJECT/sky130_hcmus_ip__instramp/xschem/opamp.sym} -320 -140 0 0 {name=x1}
-C {devices/vsource.sym} -650 -120 1 0 {name=V1 value="SIN (0 10u 10K)" savecurrent=false}
-C {sky130_fd_pr/cap_mim_m3_1.sym} -280 -100 2 0 {name=C2 model=cap_mim_m3_1 W=10 L=10 MF=5 spiceprefix=X}
+C {devices/vsource.sym} -650 -120 1 0 {name=V1 value="SIN (0 1u 10K)" savecurrent=false}
+C {sky130_fd_pr/cap_mim_m3_1.sym} -280 -100 2 0 {name=C2 model=cap_mim_m3_1 W=6.9 L=6.9 MF=5 spiceprefix=X}

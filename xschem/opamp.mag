@@ -1,0 +1,81 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1716374607
+<< checkpaint >>
+rect 6952 -1388 10128 1786
+<< error_s >>
+rect 497 4034 555 4120
+rect 1441 4109 1549 4120
+rect 1441 4097 1556 4109
+rect 1441 4034 1499 4097
+rect 496 3968 591 4034
+rect 496 3910 707 3968
+rect 496 571 620 3910
+rect 696 737 707 3737
+rect 496 535 609 571
+rect 562 517 609 535
+rect 1387 506 1404 3968
+rect 1405 506 1499 4034
+rect 1405 440 1470 506
+rect 1978 411 2025 3932
+rect 2032 357 2079 3878
+rect 2569 346 2616 3878
+rect 2623 292 2670 3932
+rect 3160 281 3207 3802
+rect 3214 227 3261 3748
+rect 3653 3690 3798 3748
+rect 3740 3679 3798 3690
+rect 3739 3613 3834 3679
+rect 3739 3555 3950 3613
+rect 3739 216 3863 3555
+rect 3939 382 3950 3382
+rect 3739 180 3852 216
+rect 3805 162 3852 180
+rect 4630 151 4647 3613
+rect 4684 102 4701 3667
+use sky130_fd_pr__cap_mim_m3_1_8DB3RK  XC1
+timestamp 0
+transform 1 0 6984 0 1 720
+box -876 -730 876 730
+use sky130_fd_pr__pfet_g5v0d10v5_CGCQND  XM1
+timestamp 0
+transform 1 0 983 0 1 2237
+box -487 -1797 487 1797
+use sky130_fd_pr__nfet_g5v0d10v5_NXXQFR  XM2
+timestamp 0
+transform 1 0 263 0 1 2443
+box -328 -1908 328 1908
+use sky130_fd_pr__pfet_g5v0d10v5_CGCQND  XM3
+timestamp 0
+transform 1 0 4226 0 1 1882
+box -487 -1797 487 1797
+use sky130_fd_pr__nfet_g5v0d10v5_NXXQFR  XM4
+timestamp 0
+transform 1 0 1733 0 1 2283
+box -328 -1908 328 1908
+use sky130_fd_pr__nfet_g5v0d10v5_F3SB2X  XM5
+timestamp 0
+transform 1 0 2324 0 1 2112
+box -328 -1802 328 1802
+use sky130_fd_pr__nfet_g5v0d10v5_2HXNYY  XM6
+timestamp 0
+transform 1 0 2915 0 1 2403
+box -328 -2158 328 2158
+use sky130_fd_pr__nfet_g5v0d10v5_F3SB2X  XM7
+timestamp 0
+transform 1 0 3506 0 1 1982
+box -328 -1802 328 1802
+use sky130_fd_pr__pfet_g5v0d10v5_24QKAW  XM8
+timestamp 0
+transform 1 0 5363 0 1 2187
+box -745 -2197 745 2197
+use sky130_fd_pr__nfet_g5v0d10v5_LB7Y8R  XM9
+timestamp 0
+transform 1 0 8540 0 1 199
+box -328 -327 328 327
+use sky130_fd_pr__res_high_po_0p69_YV8KA8  XR3
+timestamp 0
+transform 1 0 8042 0 1 839
+box -235 -902 235 902
+<< end >>

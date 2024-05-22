@@ -1,4 +1,4 @@
-v {xschem version=3.1.0 file_version=1.2
+v {xschem version=3.4.5 file_version=1.2
 }
 G {}
 K {}
@@ -51,12 +51,18 @@ N -440 -250 -440 -200 {
 lab=GND}
 N -390 -200 -390 -170 {
 lab=GND}
-N -80 40 -0 40 {}
-N -0 10 -0 40 {}
-N -0 -75 0 -50 {}
-N -410 -70 -410 -50 {}
-N -410 10 -410 40 {}
-N -475 40 -410 40 {}
+N -80 40 -0 40 {
+lab=GND}
+N -0 10 -0 40 {
+lab=GND}
+N -0 -75 0 -50 {
+lab=OUT1}
+N -410 -70 -410 -50 {
+lab=OUT}
+N -410 10 -410 40 {
+lab=GND}
+N -475 40 -410 40 {
+lab=GND}
 C {devices/vsource.sym} -440 -280 0 0 {name=V6 value="AC 1 180" savecurrent=false}
 C {devices/vsource.sym} -320 -280 0 0 {name=V5 value="AC 1 0" savecurrent=false}
 C {devices/gnd.sym} -390 -170 0 0 {name=l1 lab=GND}
@@ -77,9 +83,9 @@ save all
 ac dec 100 1 10G
 let Ad = \{v(OUT)/(v(INP)-v(INN))\}
 let Acm = \{v(OUT1)/v(INP)\}
-let CMRR = \{20*log(Ad/Acm)\}
-let Ao = \{20*log(Ad)\}
-save Ad Acm CMRR Ao
+let CMRR = \{20*log10(Ad/Acm)\}
+let Ao = \{20*log10(Ad)\}
+save Ad Acm CMRR Ao cm
 write opamp_cmrr.raw
 plot CMRR
 plot Ao
@@ -98,13 +104,5 @@ C {devices/lab_wire.sym} -635 -90 0 0 {name=p6 sig_type=std_logic lab=INN}
 C {devices/lab_wire.sym} -635 -50 0 0 {name=p7 sig_type=std_logic lab=INP}
 C {../xschem/opamp.sym} -470 -70 0 0 {name=x1}
 C {../xschem/opamp.sym} -75 -75 0 0 {name=x2}
-C {devices/capa.sym} -410 -20 0 0 {name=C1
-m=1
-value=2p
-footprint=1206
-device="ceramic capacitor"}
-C {devices/capa.sym} 0 -20 0 0 {name=C2
-m=1
-value=2p
-footprint=1206
-device="ceramic capacitor"}
+C {sky130_fd_pr/cap_mim_m3_1.sym} 0 -20 2 0 {name=C3 model=cap_mim_m3_1 W=6.9 L=6.9 MF=5 spiceprefix=X}
+C {sky130_fd_pr/cap_mim_m3_1.sym} -410 -20 2 0 {name=C1 model=cap_mim_m3_1 W=6.9 L=6.9 MF=5 spiceprefix=X}
