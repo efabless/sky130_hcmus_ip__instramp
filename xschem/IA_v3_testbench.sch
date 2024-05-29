@@ -6,15 +6,15 @@ V {}
 S {}
 E {}
 B 2 2750 -1620 3550 -1220 {flags=graph
-y1=-0.017
-y2=0.017
+y1=-0.012
+y2=0.012
 ypos1=0
 ypos2=2
 divy=5
 subdivy=1
 unity=1
 x1=0
-x2=5e-05
+x2=0.0001
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -27,27 +27,29 @@ logx=0
 logy=0
 }
 B 2 1930 -1620 2730 -1220 {flags=graph
-y1=-0.00013
-y2=0.00013
+y1=-0.00011
+y2=0.00011
 ypos1=0
 ypos2=2
 divy=5
 subdivy=1
 unity=1
 x1=0
-x2=5e-05
+x2=0.0001
 divx=5
 subdivx=1
 xlabmag=1.0
 ylabmag=1.0
-node="vout1
-vout2"
-color="19 20"
+
+
 dataset=-1
 unitx=1
 logx=0
 logy=0
-}
+hilight_wave=0
+color="19 20"
+node="vout1
+vout2"}
 B 2 1110 -1620 1910 -1220 {flags=graph
 y1=-1e-06
 y2=1e-06
@@ -57,7 +59,7 @@ divy=5
 subdivy=1
 unity=1
 x1=0
-x2=5e-05
+x2=0.0001
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -70,6 +72,76 @@ unitx=1
 logx=0
 logy=0
 }
+B 2 2750 -2040 3550 -1640 {flags=graph
+y1=-5.3e-15
+y2=3.5e-15
+ypos1=0
+ypos2=2
+divy=5
+subdivy=1
+unity=1
+x1=0
+x2=0.0001
+divx=5
+subdivx=1
+xlabmag=1.0
+ylabmag=1.0
+node="i(v.x1.x1.vmeas4)
+i(v.x1.x1.vmeas5)"
+color="11 12"
+dataset=-1
+unitx=1
+logx=0
+logy=0
+hilight_wave=-1}
+B 2 1930 -2040 2730 -1640 {flags=graph
+y1=-5.3e-15
+y2=3.5e-15
+ypos1=0
+ypos2=2
+divy=5
+subdivy=1
+unity=1
+x1=0
+x2=0.0001
+divx=5
+subdivx=1
+xlabmag=1.0
+ylabmag=1.0
+
+
+dataset=-1
+unitx=1
+logx=0
+logy=0
+color="8 10"
+node="i(v.x1.x1.vmeas2)
+i(v.x1.x1.vmeas3)"
+hilight_wave=-1}
+B 2 1110 -2040 1910 -1640 {flags=graph
+y1=-1.6e-08
+y2=1.6e-08
+ypos1=0
+ypos2=2
+divy=5
+subdivy=1
+unity=1
+x1=0
+x2=0.0001
+divx=5
+subdivx=1
+xlabmag=1.0
+ylabmag=1.0
+
+
+dataset=-1
+unitx=1
+logx=0
+logy=0
+color="6 7"
+node="i(v.x1.x1.vmeas)
+i(v.x1.x1.vmeas1)"
+hilight_wave=-1}
 N 1140 -1150 1140 -1110 {
 lab=#net1}
 N 1220 -1130 1220 -1110 {
@@ -228,6 +300,8 @@ C {devices/opin.sym} 2260 -1130 0 0 {name=p1 lab=VOUT}
 C {devices/opin.sym} 2260 -1070 0 0 {name=p2 lab=VOUT1}
 C {devices/opin.sym} 2260 -1050 0 0 {name=p3 lab=VOUT2}
 C {devices/code_shown.sym} 2490 -1095 0 0 {name=s2 only_toplevel=false value=".param fin = 10K
+.param Lr=1.0
+.param Wr=20.0
 .control
 save all
 tran 0.5u 100u
@@ -235,35 +309,43 @@ meas tran minv MIN v(vout)
 meas tran maxv MAX v(vout)
 let gain = ((abs(maxv)+abs(minv))/(2e-6))
 print gain
-write IA_v2_testbench.raw
+write IA_v3_testbench.raw
 .endc"}
 C {devices/lab_wire.sym} 1330 -1110 0 0 {name=p4 sig_type=std_logic lab=IN1}
 C {devices/lab_wire.sym} 1500 -1090 0 0 {name=p5 sig_type=std_logic lab=IN2}
 C {devices/vsource.sym} 1460 -740 0 0 {name=VD0 value=0}
-C {devices/gnd.sym} 1460 -690 0 0 {name=l6 lab=GND}
+C {devices/gnd.sym} 1460 -690 0 0 {name=l6 lab=GND
+value=0}
 C {devices/vsource.sym} 1540 -740 0 0 {name=VD1 value=0}
-C {devices/gnd.sym} 1540 -690 0 0 {name=l7 lab=GND}
+C {devices/gnd.sym} 1540 -690 0 0 {name=l7 lab=GND
+value=0}
 C {devices/vsource.sym} 1620 -740 0 0 {name=VD2 value=0}
-C {devices/gnd.sym} 1620 -690 0 0 {name=l8 lab=GND}
+C {devices/gnd.sym} 1620 -690 0 0 {name=l8 lab=GND
+value=0}
 C {devices/vsource.sym} 1700 -740 0 0 {name=VD3 value=0}
-C {devices/gnd.sym} 1700 -690 0 0 {name=l9 lab=GND}
+C {devices/gnd.sym} 1700 -690 0 0 {name=l9 lab=GND
+value=0}
 C {devices/vsource.sym} 1780 -740 0 0 {name=VD4 value=0}
-C {devices/gnd.sym} 1780 -690 0 0 {name=l10 lab=GND}
+C {devices/gnd.sym} 1780 -690 0 0 {name=l10 lab=GND
+value=0}
 C {devices/vsource.sym} 1860 -740 0 0 {name=VD5 value=0}
-C {devices/gnd.sym} 1860 -690 0 0 {name=l11 lab=GND}
+C {devices/gnd.sym} 1860 -690 0 0 {name=l11 lab=GND
+value=0}
 C {devices/vsource.sym} 1940 -740 0 0 {name=VD6 value=0}
-C {devices/gnd.sym} 1940 -690 0 0 {name=l12 lab=GND}
+C {devices/gnd.sym} 1940 -690 0 0 {name=l12 lab=GND
+value=0}
 C {devices/vsource.sym} 2020 -740 0 0 {name=VD7 value=0}
-C {devices/gnd.sym} 2020 -690 0 0 {name=l13 lab=GND}
+C {devices/gnd.sym} 2020 -690 0 0 {name=l13 lab=GND
+value=0}
 C {devices/vsource.sym} 2100 -740 0 0 {name=VD8 value=0}
 C {devices/gnd.sym} 2100 -690 0 0 {name=l14 lab=GND
 value=0}
 C {devices/vsource.sym} 2180 -740 0 0 {name=VD9 value=0}
 C {devices/gnd.sym} 2180 -690 0 0 {name=l15 lab=GND
 value=0}
-C {devices/launcher.sym} 3230 -960 0 0 {name=h5
-descr="load waves" 
-tclcommand="xschem raw_read $netlist_dir/IA_v2_testbench.raw tran"
-}
 C {sky130_fd_pr/corner.sym} 3210 -1120 0 0 {name=CORNER only_toplevel=true corner=tt}
-C {./IA_v2.sym} 2070 -1020 0 0 {name=x1}
+C {./IA_v3.sym} 2070 -1020 0 0 {name=x1}
+C {devices/launcher.sym} 3120 -900 0 0 {name=h5
+descr="load waves" 
+tclcommand="xschem raw_read $netlist_dir/IA_v3_testbench.raw tran"
+}

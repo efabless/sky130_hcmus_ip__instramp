@@ -153,42 +153,35 @@ N -1200 -940 -1140 -940 {
 lab=AVOUT1}
 N -1200 -80 -1140 -80 {
 lab=AVOUT2}
-N -1140 -940 -960 -940 {
+N -1170 -1010 -1170 -940 {
 lab=AVOUT1}
-N -1140 -80 -960 -80 {
+N -1170 -1010 -1140 -1010 {
+lab=AVOUT1}
+N -1170 -80 -1170 -20 {
 lab=AVOUT2}
-N -790 -960 -710 -960 {
-lab=#net5}
-N -710 -940 -660 -940 {
-lab=#net5}
-N -710 -960 -710 -940 {
-lab=#net5}
-N -790 -100 -770 -100 {
-lab=#net6}
-N -770 -80 -660 -80 {
-lab=#net6}
-N -770 -100 -770 -80 {
-lab=#net6}
-N -875 -1040 -875 -1000 {
+N -1170 -20 -1140 -20 {
+lab=AVOUT2}
+N -845 -160 -845 -120 {
 lab=VDD}
-N -875 -920 -875 -890 {
+N -845 -40 -845 0 {
 lab=VSS}
-N -960 -1080 -960 -980 {
-lab=#net5}
-N -960 -1080 -710 -1080 {
-lab=#net5}
-N -710 -1080 -710 -960 {
-lab=#net5}
-N -875 -180 -875 -140 {
+N -845 -1020 -845 -980 {
 lab=VDD}
-N -875 -60 -875 -20 {
+N -845 -900 -845 -860 {
 lab=VSS}
-N -960 -220 -960 -120 {
-lab=#net6}
-N -960 -220 -770 -220 {
-lab=#net6}
-N -770 -220 -770 -100 {
-lab=#net6}
+N -1140 -920 -930 -920 {}
+N -1140 -60 -930 -60 {}
+N -1140 -80 -1140 -60 {}
+N -760 -80 -660 -80 {}
+N -960 -100 -930 -100 {}
+N -960 -210 -960 -100 {}
+N -960 -210 -720 -210 {}
+N -720 -210 -720 -80 {}
+N -760 -940 -660 -940 {}
+N -980 -960 -930 -960 {}
+N -980 -1050 -980 -960 {}
+N -980 -1050 -720 -1050 {}
+N -720 -1050 -720 -940 {}
 C {devices/opin.sym} 20 -500 0 0 {name=p5 lab=VOUT}
 C {devices/iopin.sym} 20 -80 0 0 {name=p1 lab=G}
 C {devices/lab_wire.sym} -1495 -960 0 0 {name=p6 sig_type=std_logic lab=V2}
@@ -210,10 +203,10 @@ C {devices/ipin.sym} -1430 -460 0 0 {name=p18 lab=V2
 C {../xschem/opamp.sym} -1220 -940 2 1 {name=x4}
 C {../xschem/opamp.sym} -1220 -80 0 0 {name=x5}
 C {../xschem/opamp.sym} -230 -500 0 0 {name=x6}
-C {../xschem/RA_array.sym} -1180 -780 1 0 {name=x1}
-C {../xschem/RA_array.sym} -1180 -260 1 1 {name=x2}
-C {../xschem/RA_array.sym} -240 -900 0 1 {name=x3}
-C {../xschem/RA_array.sym} -240 -120 2 0 {name=x7}
+C {../xschem/RA_array_v2.sym} -1180 -780 1 0 {name=x1}
+C {../xschem/RA_array_v2.sym} -1180 -260 1 1 {name=x2}
+C {../xschem/RA_array_v2.sym} -240 -900 0 1 {name=x3}
+C {../xschem/RA_array_v2.sym} -240 -120 2 0 {name=x7}
 C {devices/lab_wire.sym} -1060 -840 0 1 {name=p14 lab=D0
 }
 C {devices/lab_wire.sym} -1060 -820 0 1 {name=p19 lab=D1
@@ -255,8 +248,8 @@ C {devices/lab_wire.sym} -200 -1020 3 1 {name=p36 lab=D6
 }
 C {devices/lab_wire.sym} -180 -1020 3 1 {name=p37 lab=D5
 }
-C {devices/opin.sym} -1140 -940 3 0 {name=p38 lab=AVOUT1}
-C {devices/opin.sym} -1140 -80 1 0 {name=p39 lab=AVOUT2}
+C {devices/opin.sym} -1140 -1010 0 0 {name=p38 lab=AVOUT1}
+C {devices/opin.sym} -1140 -20 0 0 {name=p39 lab=AVOUT2}
 C {devices/lab_wire.sym} -630 -1020 3 0 {name=p13 lab=G}
 C {devices/lab_wire.sym} -630 0 0 0 {name=p11 sig_type=std_logic lab=G}
 C {devices/lab_wire.sym} -1020 -470 0 0 {name=p12 sig_type=std_logic lab=G}
@@ -264,24 +257,24 @@ C {devices/lab_wire.sym} -1225 -720 0 0 {name=p40 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} -1225 -320 0 0 {name=p41 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} -325 -880 0 0 {name=p42 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} -325 -140 0 0 {name=p43 sig_type=std_logic lab=VDD}
-C {sky130_fd_pr/res_high_po_0p69.sym} -630 -940 1 0 {name=R4
-L=127.08
+C {sky130_fd_pr/res_high_po_0p69.sym} -1140 -530 0 1 {name=R1
+L=12.22
 model=res_high_po_0p69
 spiceprefix=X
 mult=64}
-C {sky130_fd_pr/res_high_po_0p69.sym} -1140 -530 2 0 {name=R1
-L=127.08
+C {sky130_fd_pr/res_high_po_0p69.sym} -630 -940 3 1 {name=R2
+L=12.22
 model=res_high_po_0p69
 spiceprefix=X
 mult=64}
-C {sky130_fd_pr/res_high_po_0p69.sym} -630 -80 3 0 {name=R2
-L=127.08
+C {sky130_fd_pr/res_high_po_0p69.sym} -630 -80 1 1 {name=R3
+L=12.22
 model=res_high_po_0p69
 spiceprefix=X
 mult=64}
-C {devices/lab_wire.sym} -875 -1020 1 0 {name=p44 sig_type=std_logic lab=VDD}
-C {devices/lab_wire.sym} -875 -910 3 0 {name=p45 sig_type=std_logic lab=VSS}
-C {devices/lab_wire.sym} -875 -160 1 0 {name=p46 sig_type=std_logic lab=VDD}
-C {devices/lab_wire.sym} -875 -35 3 0 {name=p47 sig_type=std_logic lab=VSS}
-C {../xschem/opamp.sym} -810 -960 0 0 {name=x8}
-C {../xschem/opamp.sym} -810 -100 0 0 {name=x9}
+C {devices/lab_wire.sym} -845 -135 1 0 {name=p44 sig_type=std_logic lab=VDD}
+C {devices/lab_wire.sym} -845 -20 3 0 {name=p45 sig_type=std_logic lab=VSS}
+C {../xschem/opamp.sym} -780 -80 0 0 {name=x8}
+C {devices/lab_wire.sym} -845 -995 1 0 {name=p46 sig_type=std_logic lab=VDD}
+C {devices/lab_wire.sym} -845 -880 3 0 {name=p47 sig_type=std_logic lab=VSS}
+C {../xschem/opamp.sym} -780 -940 0 0 {name=x9}

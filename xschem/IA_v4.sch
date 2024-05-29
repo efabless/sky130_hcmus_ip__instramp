@@ -210,10 +210,10 @@ C {devices/ipin.sym} -1430 -460 0 0 {name=p18 lab=V2
 C {../xschem/opamp.sym} -1220 -940 2 1 {name=x4}
 C {../xschem/opamp.sym} -1220 -80 0 0 {name=x5}
 C {../xschem/opamp.sym} -230 -500 0 0 {name=x6}
-C {../xschem/RA_array.sym} -1180 -780 1 0 {name=x1}
-C {../xschem/RA_array.sym} -1180 -260 1 1 {name=x2}
-C {../xschem/RA_array.sym} -240 -900 0 1 {name=x3}
-C {../xschem/RA_array.sym} -240 -120 2 0 {name=x7}
+C {../xschem/RB_array_20.sym} -1150 -780 1 0 {name=x1}
+C {../xschem/RB_array_20.sym} -1150 -260 1 1 {name=x2}
+C {../xschem/RB_array_20.sym} -240 -930 0 1 {name=x3}
+C {../xschem/RB_array_20.sym} -240 -90 2 0 {name=x7}
 C {devices/lab_wire.sym} -1060 -840 0 1 {name=p14 lab=D0
 }
 C {devices/lab_wire.sym} -1060 -820 0 1 {name=p19 lab=D1
@@ -265,17 +265,17 @@ C {devices/lab_wire.sym} -1225 -320 0 0 {name=p41 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} -325 -880 0 0 {name=p42 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} -325 -140 0 0 {name=p43 sig_type=std_logic lab=VDD}
 C {sky130_fd_pr/res_high_po_0p69.sym} -630 -940 1 0 {name=R4
-L=127.08
+L=12.22
 model=res_high_po_0p69
 spiceprefix=X
 mult=64}
 C {sky130_fd_pr/res_high_po_0p69.sym} -1140 -530 2 0 {name=R1
-L=127.08
+L=12.22
 model=res_high_po_0p69
 spiceprefix=X
 mult=64}
 C {sky130_fd_pr/res_high_po_0p69.sym} -630 -80 3 0 {name=R2
-L=127.08
+L=12.22
 model=res_high_po_0p69
 spiceprefix=X
 mult=64}

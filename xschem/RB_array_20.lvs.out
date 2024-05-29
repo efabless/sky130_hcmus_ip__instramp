@@ -1,0 +1,79 @@
+
+Circuit 1 cell sky130_fd_pr__res_high_po_0p69 and Circuit 2 cell sky130_fd_pr__res_high_po_0p69 are black boxes.
+Warning: Equate pins:  cell sky130_fd_pr__res_high_po_0p69 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_pr__res_high_po_0p69 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_pr__res_high_po_0p69  |Circuit 2: sky130_fd_pr__res_high_po_0p69  
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_pr__res_high_po_0p69 and sky130_fd_pr__res_high_po_0p69 are equivalent.
+
+Circuit 1 cell sky130_fd_pr__nfet_g5v0d10v5 and Circuit 2 cell sky130_fd_pr__nfet_g5v0d10v5 are black boxes.
+Warning: Equate pins:  cell sky130_fd_pr__nfet_g5v0d10v5 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_pr__nfet_g5v0d10v5 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_pr__nfet_g5v0d10v5    |Circuit 2: sky130_fd_pr__nfet_g5v0d10v5    
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_pr__nfet_g5v0d10v5 and sky130_fd_pr__nfet_g5v0d10v5 are equivalent.
+Flattening unmatched subcell sky130_fd_pr__res_high_po_0p69_JKKHRG in circuit RB_array_20 (0)(2 instances)
+Flattening unmatched subcell sky130_fd_pr__res_high_po_0p69_Z3RMRJ in circuit RB_array_20 (0)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__res_high_po_0p69_Z3RMR6 in circuit RB_array_20 (0)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__res_high_po_0p69_YMHKRJ in circuit RB_array_20 (0)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__res_high_po_0p69_HBQF5Z in circuit RB_array_20 (0)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__nfet_g5v0d10v5_727CUP in circuit RB_array_20 (0)(2 instances)
+Flattening unmatched subcell sky130_fd_pr__nfet_g5v0d10v5_VU5C5A in circuit RB_array_20 (0)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__nfet_g5v0d10v5_J97EKB in circuit RB_array_20 (0)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__nfet_g5v0d10v5_S7E57E in circuit RB_array_20 (0)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__nfet_g5v0d10v5_YPGNM4 in circuit RB_array_20 (0)(1 instance)
+
+Removing zero-valued device vsrc from cell RB_array_20 (1) makes a better match
+Removing zero-valued device vsrc from cell RB_array_20 (1) makes a better match
+Removing zero-valued device vsrc from cell RB_array_20 (1) makes a better match
+Removing zero-valued device vsrc from cell RB_array_20 (1) makes a better match
+Removing zero-valued device vsrc from cell RB_array_20 (1) makes a better match
+Removing zero-valued device vsrc from cell RB_array_20 (1) makes a better match
+Making another compare attempt.
+
+Class RB_array_20 (0):  Merged 50 parallel devices.
+Subcircuit summary:
+Circuit 1: RB_array_20                     |Circuit 2: RB_array_20                     
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__res_high_po_0p69 (32->6)     |sky130_fd_pr__res_high_po_0p69 (32->6)     
+sky130_fd_pr__nfet_g5v0d10v5 (30->6)       |sky130_fd_pr__nfet_g5v0d10v5 (6)           
+Number of devices: 12                      |Number of devices: 12                      
+Number of nets: 15                         |Number of nets: 15                         
+---------------------------------------------------------------------------------------
+Resolving symmetries by property value.
+Resolving symmetries by pin name.
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: RB_array_20                     |Circuit 2: RB_array_20                     
+-------------------------------------------|-------------------------------------------
+D1                                         |D1                                         
+D2                                         |D2                                         
+D3                                         |D3                                         
+D4                                         |D4                                         
+D0                                         |D0                                         
+VDD                                        |VDD                                        
+R2                                         |R2                                         
+R1                                         |R1                                         
+VSS                                        |VSS                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes RB_array_20 and RB_array_20 are equivalent.
+
+Final result: Circuits match uniquely.
+.
