@@ -1,7 +1,7 @@
 v {xschem version=3.4.5 file_version=1.2
 }
 G {}
-K {type=subcircuit
+K {type=primative
 format="@name @pinlist @symname"
 template="name=x1"
 }
@@ -29,25 +29,43 @@ L 4 -150 90 -130 90 {}
 L 4 -150 110 -130 110 {}
 L 4 -150 50 -130 50 {}
 L 4 -150 130 -130 130 {}
-L 7 130 110 150 110 {}
-B 5 147.5 -52.5 152.5 -47.5 {name=AVOUT1 dir=out}
-B 5 -152.5 -132.5 -147.5 -127.5 {name=VDD dir=in}
-B 5 -152.5 -112.5 -147.5 -107.5 {name=VSS dir=in}
-B 5 147.5 -112.5 152.5 -107.5 {name=VOUT dir=out}
-B 5 -152.5 -92.5 -147.5 -87.5 {name=V1 dir=in}
-B 5 -152.5 -72.5 -147.5 -67.5 {name=V2 dir=in}
-B 5 147.5 -32.5 152.5 -27.5 {name=AVOUT2 dir=out}
-B 5 -152.5 27.5 -147.5 32.5 {name=D4 dir=in}
-B 5 -152.5 7.5 -147.5 12.5 {name=D3 dir=in}
-B 5 -152.5 -12.5 -147.5 -7.5 {name=D2 dir=in}
-B 5 -152.5 -32.5 -147.5 -27.5 {name=D1 dir=in}
-B 5 -152.5 -52.5 -147.5 -47.5 {name=D0 dir=in}
-B 5 147.5 107.5 152.5 112.5 {name=G dir=inout}
-B 5 -152.5 67.5 -147.5 72.5 {name=D6 dir=in}
-B 5 -152.5 87.5 -147.5 92.5 {name=D7 dir=in}
-B 5 -152.5 107.5 -147.5 112.5 {name=D8 dir=in}
-B 5 -152.5 47.5 -147.5 52.5 {name=D5 dir=in}
-B 5 -152.5 127.5 -147.5 132.5 {name=D9 dir=in}
+L 4 130 110 150 110 {}
+B 5 -152.5 -132.5 -147.5 -127.5 {name=VDD
+dir=inout}
+B 5 -152.5 -112.5 -147.5 -107.5 {name=VSS
+dir=inout}
+B 5 147.5 107.5 152.5 112.5 {name=G
+dir=inout}
+B 5 -152.5 -92.5 -147.5 -87.5 {name=V1
+dir=inout}
+B 5 -152.5 -72.5 -147.5 -67.5 {name=V2
+dir=inout}
+B 5 -152.5 -52.5 -147.5 -47.5 {name=D0
+dir=inout}
+B 5 -152.5 -32.5 -147.5 -27.5 {name=D1
+dir=inout}
+B 5 -152.5 -12.5 -147.5 -7.5 {name=D2
+dir=inout}
+B 5 -152.5 7.5 -147.5 12.5 {name=D3
+dir=inout}
+B 5 -152.5 27.5 -147.5 32.5 {name=D4
+dir=inout}
+B 5 -152.5 47.5 -147.5 52.5 {name=D5
+dir=inout}
+B 5 -152.5 67.5 -147.5 72.5 {name=D6
+dir=inout}
+B 5 -152.5 87.5 -147.5 92.5 {name=D7
+dir=inout}
+B 5 -152.5 107.5 -147.5 112.5 {name=D8
+dir=inout}
+B 5 -152.5 127.5 -147.5 132.5 {name=D9
+dir=inout}
+B 5 147.5 -52.5 152.5 -47.5 {name=AVOUT1
+dir=inout}
+B 5 147.5 -32.5 152.5 -27.5 {name=AVOUT2
+dir=inout}
+B 5 147.5 -112.5 152.5 -107.5 {name=VOUT
+dir=inout}
 T {@symname} -40.5 -6 0 0 0.3 0.3 {}
 T {@name} 135 -152 0 0 0.2 0.2 {}
 T {AVOUT1} 125 -54 0 1 0.2 0.2 {}

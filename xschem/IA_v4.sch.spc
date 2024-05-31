@@ -1,9 +1,9 @@
 ** sch_path: /foss/designs/sky130_hcmus_ip__instramp/xschem/IA_v4.sch
-.subckt IA_v4 AVOUT1 VDD VSS VOUT V1 V2 AVOUT2 D4 D3 D2 D1 D0 G D6 D7 D8 D5 D9
+.subckt IA_v4 VOUT G VDD VSS V1 V2 D4 D3 D2 D1 D0 D9 D8 D7 D6 D5 AVOUT1 AVOUT2
 *.PININFO VOUT:O G:B VDD:I VSS:I V1:I V2:I D4:I D3:I D2:I D1:I D0:I D9:I D8:I D7:I D6:I D5:I AVOUT1:O AVOUT2:O
-x4 VDD net3 V2 AVOUT1 VSS opamp
-x5 VDD net4 V1 AVOUT2 VSS opamp
-x6 VDD net1 net2 VOUT VSS opamp
+x4 VDD VSS V2 net3 AVOUT1 opamp
+x5 VDD VSS V1 net4 AVOUT2 opamp
+x6 VDD VSS net2 net1 VOUT opamp
 x1 G net3 AVOUT1 D0 D1 D2 D3 D4 VDD RB_array_20
 x2 G net4 AVOUT2 D0 D1 D2 D3 D4 VDD RB_array_20
 x3 G net1 VOUT D5 D6 D7 D8 D9 VDD RB_array_20
@@ -11,14 +11,14 @@ x7 G net2 G D5 D6 D7 D8 D9 VDD RB_array_20
 XR4 net5 net1 G sky130_fd_pr__res_high_po_0p69 L=12.22 mult=64 m=64
 XR1 net3 net4 G sky130_fd_pr__res_high_po_0p69 L=12.22 mult=64 m=64
 XR2 net2 net6 G sky130_fd_pr__res_high_po_0p69 L=12.22 mult=64 m=64
-x8 VDD net5 AVOUT1 net5 VSS opamp
-x9 VDD net6 AVOUT2 net6 VSS opamp
+x8 VDD VSS AVOUT1 net5 net5 opamp
+x9 VDD VSS AVOUT2 net6 net6 opamp
 .ends
 
 * expanding   symbol:  ../xschem/opamp.sym # of pins=5
 ** sym_path: /foss/designs/sky130_hcmus_ip__instramp/xschem/opamp.sym
 ** sch_path: /foss/designs/sky130_hcmus_ip__instramp/xschem/opamp.sch
-.subckt opamp VDD V2 V1 VOUT VSS
+.subckt opamp VDD VSS V1 V2 VOUT
 *.PININFO VSS:I VDD:I V2:I V1:I VOUT:O
 XM2 net2 V2 net1 VSS sky130_fd_pr__nfet_g5v0d10v5 L=1 W=16.5 nf=1 m=1
 XM1 net3 net2 VDD VDD sky130_fd_pr__pfet_g5v0d10v5 L=1 W=30 nf=2 m=1

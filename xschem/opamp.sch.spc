@@ -1,5 +1,5 @@
 ** sch_path: /foss/designs/sky130_hcmus_ip__instramp/xschem/opamp.sch
-.subckt opamp VDD V2 V1 VOUT VSS
+.subckt opamp VSS VDD V2 V1 VOUT
 *.PININFO VSS:I VDD:I V2:I V1:I VOUT:O
 XM2 net2 V2 net1 VSS sky130_fd_pr__nfet_g5v0d10v5 L=1 W=16.5 nf=1 m=1
 XM1 net3 net2 VDD VDD sky130_fd_pr__pfet_g5v0d10v5 L=1 W=30 nf=2 m=1

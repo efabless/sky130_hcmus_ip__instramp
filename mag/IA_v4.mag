@@ -1,13 +1,24 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1717127936
+timestamp 1717160525
 << dnwell >>
-rect -60 -20 15946 3505
+rect 339 899 939 1499
+rect 3517 886 4117 1486
+rect 6723 881 7323 1481
+rect 9898 855 10498 1455
+rect 13073 849 13673 1449
 << pwell >>
 rect 15152 8984 20089 16096
-rect 17204 -153 20102 85
-rect 9975 -10266 10165 -329
+rect 48 1499 15865 4444
+rect 48 899 339 1499
+rect 939 899 15865 1499
+rect 48 4 15865 899
+rect 16481 94 17269 97
+rect 16481 85 17272 94
+rect 16481 -53 20102 85
+rect 49 -1608 20106 -53
+rect 9975 -10266 10165 -1608
 << locali >>
 rect -285 16347 41 16348
 rect -285 16021 20143 16347
@@ -72,8 +83,10 @@ rect 12629 4617 12826 8854
 rect -90 -3815 43 4616
 rect 77 4306 15816 4389
 rect 77 4196 1313 4306
+rect 87 149 205 162
 rect 3046 149 3317 4306
 rect 6230 149 6501 4306
+rect 7518 531 7664 4306
 rect 9414 149 9685 4306
 rect 12598 149 12869 4306
 rect 77 54 15816 149
@@ -658,15 +671,15 @@ timestamp 1717127688
 transform 1 0 8317 0 1 -5002
 box 1690 -194 11784 4950
 use opamp  x4
-timestamp 1717127688
+timestamp 1717149788
 transform 1 0 -3828 0 1 -243
 box 3810 247 7000 9177
 use opamp  x5
-timestamp 1717127688
+timestamp 1717149788
 transform 1 0 -644 0 1 -243
 box 3810 247 7000 9177
 use opamp  x6
-timestamp 1717127688
+timestamp 1717149788
 transform 1 0 8908 0 1 -243
 box 3810 247 7000 9177
 use RB_array_20  x7
@@ -674,11 +687,11 @@ timestamp 1717127688
 transform 1 0 8317 0 1 -10070
 box 1690 -194 11784 4950
 use opamp  x8
-timestamp 1717127688
+timestamp 1717149788
 transform 1 0 2540 0 1 -243
 box 3810 247 7000 9177
 use opamp  x9
-timestamp 1717127688
+timestamp 1717149788
 transform 1 0 5724 0 1 -243
 box 3810 247 7000 9177
 use sky130_fd_pr__res_high_po_0p69_WX3C5M  XR1
@@ -694,13 +707,8 @@ timestamp 1717127688
 transform 1 0 7594 0 1 14290
 box -7606 -1804 7606 1804
 << labels >>
-flabel space -12 12486 15200 16094 0 FreeSans 8000 0 0 0 XR4
 flabel space -12 8984 15200 12592 0 FreeSans 8000 0 0 0 XR1
 flabel space 16493 37 20101 15249 0 FreeSans 8000 0 0 0 XR2
-flabel space -90 -10264 10004 -5120 0 FreeSans 8000 0 0 0 x2
-flabel space 10007 -10265 20101 -5121 0 FreeSans 8000 0 0 0 x7
-flabel space 10007 -5197 20101 -53 0 FreeSans 8000 0 0 0 x3
-flabel space -90 -5196 10004 -52 0 FreeSans 8000 0 0 0 x1
 flabel space 12718 4 15908 8934 0 FreeSans 8000 0 0 0 x6
 flabel space 9534 4 12724 8934 0 FreeSans 8000 0 0 0 x9
 flabel space 6350 4 9540 8934 0 FreeSans 8000 0 0 0 x8
@@ -712,6 +720,13 @@ flabel metal1 -461 5110 -341 5230 0 FreeSans 4800 0 0 0 V1
 port 4 nsew
 flabel metal1 -461 4495 -341 4615 0 FreeSans 4800 0 0 0 V2
 port 5 nsew
+flabel metal1 20316 3786 20575 4043 0 FreeSans 4800 0 0 0 VOUT
+port 18 nsew
+flabel metal1 -461 -687 -381 -607 0 FreeSans 4800 0 0 0 AVOUT1
+port 16 nsew
+flabel space -90 -5196 10004 -52 0 FreeSans 8000 0 0 0 x1
+flabel space 10007 -5196 20101 -52 0 FreeSans 8000 0 0 0 x3
+flabel space -12 12486 15200 16094 0 FreeSans 8000 0 0 0 XR4
 flabel metal1 -90 -4038 -10 -3958 0 FreeSans 960 0 0 0 D0
 port 6 nsew
 flabel metal1 -90 -4146 -10 -4066 0 FreeSans 960 0 0 0 D1
@@ -732,14 +747,12 @@ flabel metal1 -90 -7000 -10 -6920 0 FreeSans 960 0 0 0 D8
 port 14 nsew
 flabel metal1 -90 -7140 -10 -7060 0 FreeSans 960 0 0 0 D9
 port 15 nsew
-flabel metal1 -461 -687 -381 -607 0 FreeSans 4800 0 0 0 AVOUT1
-port 16 nsew
 flabel metal1 -461 -5755 -381 -5675 0 FreeSans 4800 0 0 0 AVOUT2
 port 17 nsew
-flabel metal1 20316 3786 20575 4043 0 FreeSans 4800 0 0 0 VOUT
-port 18 nsew
 flabel locali -250 -10240 -50 -10040 0 FreeSans 4800 0 0 0 G
 port 3 nsew
-flabel locali 86 57 166 137 0 FreeSans 4800 0 0 0 VSS
+flabel space -90 -10264 10004 -5120 0 FreeSans 8000 0 0 0 x2
+flabel space 10007 -10264 20101 -5120 0 FreeSans 8000 0 0 0 x7
+flabel locali 87 63 205 162 0 FreeSans 4800 0 0 0 VSS
 port 2 nsew
 << end >>
