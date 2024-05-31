@@ -142,7 +142,9 @@ C {devices/vsource.sym} -190 -70 3 0 {name=V3 value=1.8 savecurrent=false}
 C {devices/gnd.sym} -140 -60 0 0 {name=l3 lab=GND}
 C {devices/lab_wire.sym} -480 -30 0 0 {name=p1 sig_type=std_logic lab=VIN}
 C {devices/lab_wire.sym} -60 -10 0 0 {name=p2 sig_type=std_logic lab=VOUT}
-C {devices/code_shown.sym} -510 100 0 0 {name=s1 only_toplevel=false value=".save all
+C {devices/code_shown.sym} -510 100 0 0 {name=s1 only_toplevel=false value="
+.include /foss/designs/sky130_hcmus_ip__instramp/xschem/layout/opamp.spice
+.save all
 .control
 tran 1u 1000u
 meas tran minv MIN v(VOUT) 
