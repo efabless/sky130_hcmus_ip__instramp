@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1716801993
+timestamp 1717127688
 << nwell >>
 rect 3816 9037 5527 9177
 rect 3816 8195 5726 9037
@@ -85,13 +85,12 @@ rect 4978 912 6516 1082
 rect 4978 882 6166 912
 rect 4978 880 5745 882
 rect 3905 774 5724 880
-rect 3905 423 3961 774
-rect 3905 406 4034 423
+rect 3905 406 3961 774
 rect 5630 406 5714 774
-rect 3905 369 5714 406
+rect 3905 392 5714 406
 rect 6254 564 6516 912
-rect 6254 369 6366 564
-rect 3905 297 6908 369
+rect 6254 392 6366 564
+rect 3905 297 6908 392
 << viali >>
 rect 5505 4914 5602 5010
 << metal1 >>
@@ -353,58 +352,58 @@ rect 4137 550 4138 632
 rect 4217 550 4218 632
 rect 4137 549 4218 550
 use sky130_fd_pr__cap_mim_m3_1_8DB3RK  XC1
-timestamp 1716453420
+timestamp 1717127688
 transform 1 0 4722 0 1 8232
 box -876 -730 876 730
 use sky130_fd_pr__pfet_g5v0d10v5_K8DQNF  XM1
-timestamp 1716789169
+timestamp 1717127688
 transform 1 0 5093 0 1 6543
 box -487 -1762 487 1762
 use sky130_fd_pr__nfet_g5v0d10v5_VYCZE8  XM2
-timestamp 1716789371
+timestamp 1717127688
 transform 1 0 4207 0 1 2688
 box -328 -1877 328 1877
 use sky130_fd_pr__pfet_g5v0d10v5_K8DQNF  XM3
-timestamp 1716789169
+timestamp 1717127688
 transform 1 0 4309 0 1 6543
 box -487 -1762 487 1762
 use sky130_fd_pr__nfet_g5v0d10v5_VYCZE8  XM4
-timestamp 1716789371
+timestamp 1717127688
 transform 1 0 4733 0 1 2688
 box -328 -1877 328 1877
 use sky130_fd_pr__nfet_g5v0d10v5_F3SB2X  XM5
-timestamp 1716789169
+timestamp 1717127688
 transform 1 0 5390 0 1 2813
 box -328 -1802 328 1802
 use sky130_fd_pr__nfet_g5v0d10v5_2HXNYY  XM6
-timestamp 1716789169
+timestamp 1717127688
 transform 1 0 6628 0 1 2468
 box -328 -2158 328 2158
 use sky130_fd_pr__nfet_g5v0d10v5_F3SB2X  XM7
-timestamp 1716789169
+timestamp 1717127688
 transform 1 0 5916 0 1 2813
 box -328 -1802 328 1802
 use sky130_fd_pr__pfet_g5v0d10v5_24QKAW  XM8
-timestamp 1716453420
+timestamp 1717127688
 transform 1 0 6255 0 1 6979
 box -745 -2197 745 2197
 use sky130_fd_pr__nfet_g5v0d10v5_LB7Y8R  XM9
-timestamp 1716789169
+timestamp 1717127688
 transform 1 0 5990 0 1 637
 box -328 -327 328 327
-use sky130_fd_pr__res_high_po_0p69_YV8KA8  XR3
-timestamp 1716789169
+use sky130_fd_pr__res_high_po_0p69_T8KQH6  XR3
+timestamp 1717127688
 transform 0 1 4778 -1 0 593
 box -235 -902 235 902
 << labels >>
-rlabel metal1 3818 4504 3938 4624 0 V2
-port 4 nsew
-rlabel metal1 6805 4677 6925 4797 0 VOUT
-port 5 nsew
-rlabel locali 3914 303 4034 423 0 VSS
-port 2 nsew
-rlabel metal1 3810 4738 3930 4858 0 V1
-port 3 nsew
 rlabel locali 3913 8964 4033 9084 0 VDD
 port 1 nsew
+flabel metal1 3810 4738 3930 4858 0 FreeSans 800 0 0 0 V1
+port 6 nsew
+flabel metal1 3818 4504 3938 4624 0 FreeSans 800 0 0 0 V2
+port 7 nsew
+flabel metal1 6805 4677 6925 4797 0 FreeSans 800 0 0 0 VOUT
+port 8 nsew
+flabel locali 5568 1332 5753 1483 0 FreeSans 160 0 0 0 VSS
+port 2 nsew
 << end >>

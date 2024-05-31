@@ -1,4 +1,4 @@
-timestamp 1716965124
+timestamp 1717127688
 version 8.3
 tech sky130A
 style ngspice()
@@ -16,14 +16,14 @@ use sky130_fd_pr__res_high_po_0p69_Z3RMR6 XR5 1 0 6542 0 1 3104
 use sky130_fd_pr__nfet_g5v0d10v5_J97EKB XM9 1 0 6561 0 1 524
 use sky130_fd_pr__nfet_g5v0d10v5_YPGNM4 XM10 1 0 9779 0 1 526
 use sky130_fd_pr__res_high_po_0p69_HBQF5Z XR6 1 0 9776 0 1 3104
-port "R1" 4 1690 300 1770 380 m1
+port "R1" 3 1690 300 1770 380 m1
 port "D4" 9 1690 532 1770 612 m1
 port "D3" 8 1690 640 1770 720 m1
 port "D2" 7 1690 748 1770 828 m1
 port "D1" 6 1690 856 1770 936 m1
 port "D0" 5 1690 964 1770 1044 m1
 port "VDD" 1 1690 1072 1810 1192 m1
-port "R2" 3 1690 4315 1770 4395 m1
+port "R2" 4 1690 4315 1770 4395 m1
 port "VSS" 2 1912 1222 2032 1342 li
 node "m1_7940_410#" 0 0 7940 410 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 node "m1_5470_410#" 0 0 5470 410 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0

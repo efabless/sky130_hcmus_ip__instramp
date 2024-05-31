@@ -108,7 +108,7 @@ X12 a_487_n440# a_287_n528# a_229_n440# a_n1969_n662# sky130_fd_pr__nfet_g5v0d10
 X13 a_745_n440# a_545_n528# a_487_n440# a_n1969_n662# sky130_fd_pr__nfet_g5v0d10v5 ad=0.638 pd=4.69 as=0.638 ps=4.69 w=4.4 l=1
 .ends
 
-.subckt RB_array_20 VDD VSS R2 R1 D0 D1 D2 D3 D4
+.subckt RB_array_20 VDD VSS R1 R2 D0 D1 D2 D3 D4
 XXR1 VSS R2 m1_2651_1472# sky130_fd_pr__res_high_po_0p69_JKKHRG
 XXR2 VSS R2 m1_2124_1470# sky130_fd_pr__res_high_po_0p69_JKKHRG
 XXR3 R2 m1_3160_410# R2 VSS m1_3160_410# sky130_fd_pr__res_high_po_0p69_Z3RMRJ

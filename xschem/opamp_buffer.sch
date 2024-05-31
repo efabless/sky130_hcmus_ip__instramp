@@ -129,6 +129,6 @@ tran 1u 0.3m
 write opamp_buffer.raw
 .endc
 "}
-C {/home/caonam/OpenLane/FINALPROJECT/sky130_hcmus_ip__instramp/xschem/opamp.sym} -320 -140 0 0 {name=x1}
+C {./opamp.sym} -320 -140 0 0 {name=x1}
 C {devices/vsource.sym} -650 -120 1 0 {name=V1 value="SIN (0 1u 10K)" savecurrent=false}
 C {sky130_fd_pr/cap_mim_m3_1.sym} -280 -100 2 0 {name=C2 model=cap_mim_m3_1 W=6.9 L=6.9 MF=5 spiceprefix=X}

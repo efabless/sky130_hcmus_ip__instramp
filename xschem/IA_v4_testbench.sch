@@ -101,7 +101,7 @@ logy=0
 N 1140 -1150 1140 -1110 {
 lab=#net1}
 N 1220 -1130 1220 -1110 {
-lab=#net2}
+lab=VSS}
 N 1330 -1110 1330 -1090 {
 lab=IN1}
 N 1500 -1090 1500 -1070 {
@@ -117,13 +117,11 @@ lab=GND}
 N 1140 -1150 1920 -1150 {
 lab=#net1}
 N 1220 -1130 1920 -1130 {
-lab=#net2}
+lab=VSS}
 N 1330 -1110 1920 -1110 {
 lab=IN1}
 N 1500 -1090 1920 -1090 {
 lab=IN2}
-N 2220 -910 2220 -890 {
-lab=GND}
 N 2220 -1130 2260 -1130 {
 lab=VOUT}
 N 2220 -1070 2260 -1070 {
@@ -131,69 +129,69 @@ lab=VOUT1}
 N 2220 -1050 2260 -1050 {
 lab=VOUT2}
 N 1680 -1050 1920 -1050 {
-lab=#net3}
+lab=#net2}
 N 1680 -1050 1680 -890 {
-lab=#net3}
+lab=#net2}
 N 1540 -890 1680 -890 {
-lab=#net3}
+lab=#net2}
 N 1700 -1030 1920 -1030 {
-lab=#net4}
+lab=#net3}
 N 1700 -1030 1700 -870 {
-lab=#net4}
+lab=#net3}
 N 1620 -870 1700 -870 {
-lab=#net4}
+lab=#net3}
 N 1720 -1010 1920 -1010 {
-lab=#net5}
+lab=#net4}
 N 1720 -1010 1720 -850 {
-lab=#net5}
+lab=#net4}
 N 1700 -850 1720 -850 {
-lab=#net5}
+lab=#net4}
 N 1740 -990 1920 -990 {
-lab=#net6}
+lab=#net5}
 N 1740 -990 1740 -850 {
-lab=#net6}
+lab=#net5}
 N 1740 -850 1780 -850 {
-lab=#net6}
+lab=#net5}
 N 1760 -970 1920 -970 {
-lab=#net7}
+lab=#net6}
 N 1760 -970 1760 -870 {
-lab=#net7}
+lab=#net6}
 N 1760 -870 1800 -870 {
-lab=#net7}
+lab=#net6}
 N 1800 -870 1800 -790 {
-lab=#net7}
+lab=#net6}
 N 1780 -950 1920 -950 {
-lab=#net8}
+lab=#net7}
 N 1780 -950 1780 -890 {
-lab=#net8}
+lab=#net7}
 N 1780 -890 1820 -890 {
-lab=#net8}
+lab=#net7}
 N 1820 -890 1820 -810 {
-lab=#net8}
+lab=#net7}
 N 1820 -810 1940 -810 {
-lab=#net8}
+lab=#net7}
 N 1800 -930 1920 -930 {
-lab=#net9}
+lab=#net8}
 N 1800 -930 1800 -910 {
-lab=#net9}
+lab=#net8}
 N 1800 -910 1840 -910 {
-lab=#net9}
+lab=#net8}
 N 1840 -910 1840 -830 {
-lab=#net9}
+lab=#net8}
 N 1840 -830 2020 -830 {
-lab=#net9}
+lab=#net8}
 N 1860 -910 1920 -910 {
-lab=#net10}
+lab=#net9}
 N 1860 -910 1860 -850 {
-lab=#net10}
+lab=#net9}
 N 1860 -850 2100 -850 {
-lab=#net10}
+lab=#net9}
 N 1880 -890 1920 -890 {
-lab=#net11}
+lab=#net10}
 N 1880 -890 1880 -870 {
-lab=#net11}
+lab=#net10}
 N 1880 -870 2180 -870 {
-lab=#net11}
+lab=#net10}
 N 1460 -710 1460 -690 {
 lab=GND}
 N 1540 -710 1540 -690 {
@@ -215,33 +213,35 @@ lab=GND}
 N 2180 -710 2180 -690 {
 lab=GND}
 N 1860 -790 1860 -770 {
-lab=#net7}
-N 1800 -790 1860 -790 {
-lab=#net7}
-N 1660 -1070 1920 -1070 {
-lab=#net12}
-N 1660 -1070 1660 -910 {
-lab=#net12}
-N 1460 -910 1660 -910 {
-lab=#net12}
-N 1460 -910 1460 -770 {
-lab=#net12}
-N 1540 -890 1540 -770 {
-lab=#net3}
-N 1620 -870 1620 -770 {
-lab=#net4}
-N 1700 -850 1700 -770 {
-lab=#net5}
-N 1780 -850 1780 -770 {
 lab=#net6}
-N 1940 -810 1940 -770 {
-lab=#net8}
-N 2020 -830 2020 -770 {
-lab=#net9}
-N 2100 -850 2100 -770 {
-lab=#net10}
-N 2180 -870 2180 -770 {
+N 1800 -790 1860 -790 {
+lab=#net6}
+N 1660 -1070 1920 -1070 {
 lab=#net11}
+N 1660 -1070 1660 -910 {
+lab=#net11}
+N 1460 -910 1660 -910 {
+lab=#net11}
+N 1460 -910 1460 -770 {
+lab=#net11}
+N 1540 -890 1540 -770 {
+lab=#net2}
+N 1620 -870 1620 -770 {
+lab=#net3}
+N 1700 -850 1700 -770 {
+lab=#net4}
+N 1780 -850 1780 -770 {
+lab=#net5}
+N 1940 -810 1940 -770 {
+lab=#net7}
+N 2020 -830 2020 -770 {
+lab=#net8}
+N 2100 -850 2100 -770 {
+lab=#net9}
+N 2180 -870 2180 -770 {
+lab=#net10}
+N 2220 -910 2290 -910 {
+lab=#net12}
 C {devices/vsource.sym} 1140 -1080 0 0 {name=V1 value=1.8
 }
 C {devices/vsource.sym} 1220 -1080 0 0 {name=V2 value=-1.8}
@@ -251,7 +251,6 @@ C {devices/gnd.sym} 1140 -1030 0 0 {name=l1 lab=GND}
 C {devices/gnd.sym} 1220 -1030 0 0 {name=l2 lab=GND}
 C {devices/gnd.sym} 1330 -1010 0 0 {name=l3 lab=GND}
 C {devices/gnd.sym} 1500 -990 0 0 {name=l4 lab=GND}
-C {devices/gnd.sym} 2220 -890 0 0 {name=l5 lab=GND}
 C {devices/opin.sym} 2260 -1130 0 0 {name=p1 lab=VOUT}
 C {devices/opin.sym} 2260 -1070 0 0 {name=p2 lab=VOUT1}
 C {devices/opin.sym} 2260 -1050 0 0 {name=p3 lab=VOUT2}
@@ -293,3 +292,5 @@ C {devices/launcher.sym} 3210 -960 0 0 {name=h5
 descr="load waves" 
 tclcommand="xschem raw_read $netlist_dir/IA_v4_testbench.raw tran"
 }
+C {devices/lab_wire.sym} 1260 -1130 0 0 {name=p6 sig_type=std_logic lab=VSS}
+C {devices/gnd.sym} 2290 -910 0 0 {name=l5 lab=GND}

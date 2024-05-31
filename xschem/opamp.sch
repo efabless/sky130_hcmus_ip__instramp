@@ -139,7 +139,8 @@ N 1180 -900 1240 -900 {
 lab=VSS}
 N 1240 -900 1240 -570 {
 lab=VSS}
-N 1130 -900 1140 -900 {}
+N 1130 -900 1140 -900 {
+lab=VDD}
 C {sky130_fd_pr/nfet_g5v0d10v5.sym} 1400 -860 0 0 {name=M2
 L=1
 W=16.5
@@ -263,7 +264,7 @@ C {devices/opin.sym} 1870 -850 0 0 {name=p5 lab=VOUT}
 C {sky130_fd_pr/cap_mim_m3_1.sym} 1690 -990 1 0 {name=C1 model=cap_mim_m3_1 W=6.9 L=6.9 MF=1 spiceprefix=X}
 C {devices/ammeter.sym} 1180 -780 0 0 {name=V_ibias}
 C {sky130_fd_pr/res_high_po_0p69.sym} 1770 -990 1 0 {name=R3
-L=3.2
+L=3.04
 model=res_high_po_0p69
 spiceprefix=X
 mult=1}

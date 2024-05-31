@@ -1,6 +1,6 @@
 * NGSPICE file created from opamp.ext - technology: sky130A
 
-.subckt sky130_fd_pr__res_high_po_0p69_YV8KA8 a_n199_n866# a_n69_n736# a_n69_304#
+.subckt sky130_fd_pr__res_high_po_0p69_T8KQH6 a_n199_n866# a_n69_n736# a_n69_304#
 X0 a_n69_304# a_n69_n736# a_n199_n866# sky130_fd_pr__res_high_po_0p69 l=3.04
 .ends
 
@@ -44,7 +44,7 @@ X0 c1_n836_n690# m3_n876_n730# sky130_fd_pr__cap_mim_m3_1 l=6.9 w=6.9
 .ends
 
 .subckt opamp VDD VSS V1 V2 VOUT
-XXR3 VSS m1_4128_540# VOUT sky130_fd_pr__res_high_po_0p69_YV8KA8
+XXR3 VSS m1_4128_540# VOUT sky130_fd_pr__res_high_po_0p69_T8KQH6
 XXM1 m1_5053_7611# VDD a_4864_8007# VDD VDD a_4864_8007# sky130_fd_pr__pfet_g5v0d10v5_K8DQNF
 XXM2 m1_4306_994# VSS V2 a_4864_8007# sky130_fd_pr__nfet_g5v0d10v5_VYCZE8
 XXM3 a_4864_8007# VDD a_4864_8007# VDD VDD a_4864_8007# sky130_fd_pr__pfet_g5v0d10v5_K8DQNF

@@ -201,8 +201,7 @@ C {devices/lab_wire.sym} -295 -440 3 0 {name=p9 sig_type=std_logic lab=VSS}
 C {devices/lab_wire.sym} -1285 -990 1 0 {name=p10 sig_type=std_logic lab=VSS}
 C {devices/ipin.sym} -1430 -570 0 0 {name=p15 lab=VDD
 }
-C {devices/ipin.sym} -1430 -530 0 0 {name=p16 lab=VSS
-}
+C {devices/ipin.sym} -1430 -530 0 0 {name=p16 lab=VSS}
 C {devices/ipin.sym} -1430 -490 0 0 {name=p17 lab=V1
 }
 C {devices/ipin.sym} -1430 -460 0 0 {name=p18 lab=V2

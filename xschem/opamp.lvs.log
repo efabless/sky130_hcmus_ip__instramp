@@ -157,10 +157,6 @@ Circuit 1 contains 10 nets,    Circuit 2 contains 10 nets.
 
 Final result: 
 Circuits match uniquely.
-Property errors were found.
-
-The following cells had property errors:
- opamp
-
+.
 Logging to file "/foss/designs/sky130_hcmus_ip__instramp/xschem/opamp.lvs.out" disabled
 LVS Done.
