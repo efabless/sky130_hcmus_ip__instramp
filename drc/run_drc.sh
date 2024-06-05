@@ -1,6 +1,6 @@
 #! /bin/bash
 magic -dnull -noconsole -rcfile /usr/share/pdk/sky130A/libs.tech/magic/sky130A.magicrc << EOF
-load ../mag/sky130_hcmus_ip_instramp
+load ../mag/sky130_hcmus_ip__instramp
 select top cell
 expand
 drc style drc(full)
