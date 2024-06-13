@@ -1,13 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1717160525
-<< dnwell >>
-rect 339 899 939 1499
-rect 3517 886 4117 1486
-rect 6723 881 7323 1481
-rect 9898 855 10498 1455
-rect 13073 849 13673 1449
+timestamp 1718246682
 << pwell >>
 rect 15152 8984 20089 16096
 rect 48 1499 15865 4444
@@ -109,7 +103,7 @@ rect -90 -8984 -74 -8884
 rect 26 -8984 43 -8884
 rect -90 -8998 43 -8984
 rect 126 -5114 194 -3642
-rect 9940 -3745 10292 -187
+rect 9940 -3752 10292 -187
 rect 15916 -188 20143 -187
 rect 10007 -3815 10136 -3800
 rect 10007 -3915 10022 -3815
@@ -659,51 +653,51 @@ rect 100 5120 610 5220
 rect 710 5120 720 5220
 rect -10 5110 720 5120
 use RB_array_20  x1
-timestamp 1717127688
+timestamp 1718246682
 transform 1 0 -1780 0 1 -5002
 box 1690 -194 11784 4950
 use RB_array_20  x2
-timestamp 1717127688
+timestamp 1718246682
 transform 1 0 -1780 0 1 -10070
 box 1690 -194 11784 4950
 use RB_array_20  x3
-timestamp 1717127688
+timestamp 1718246682
 transform 1 0 8317 0 1 -5002
 box 1690 -194 11784 4950
 use opamp  x4
-timestamp 1717149788
+timestamp 1718246682
 transform 1 0 -3828 0 1 -243
 box 3810 247 7000 9177
 use opamp  x5
-timestamp 1717149788
+timestamp 1718246682
 transform 1 0 -644 0 1 -243
 box 3810 247 7000 9177
 use opamp  x6
-timestamp 1717149788
+timestamp 1718246682
 transform 1 0 8908 0 1 -243
 box 3810 247 7000 9177
 use RB_array_20  x7
-timestamp 1717127688
+timestamp 1718246682
 transform 1 0 8317 0 1 -10070
 box 1690 -194 11784 4950
 use opamp  x8
-timestamp 1717149788
+timestamp 1718246682
 transform 1 0 2540 0 1 -243
 box 3810 247 7000 9177
 use opamp  x9
-timestamp 1717149788
+timestamp 1718246682
 transform 1 0 5724 0 1 -243
 box 3810 247 7000 9177
-use sky130_fd_pr__res_high_po_0p69_WX3C5M  XR1
-timestamp 1717127688
+use sky130_fd_pr__res_high_po_0p69_WX3C5M  XR1 paramcells
+timestamp 1718246682
 transform 1 0 7594 0 1 10788
 box -7606 -1804 7606 1804
 use sky130_fd_pr__res_high_po_0p69_WX3C5M  XR2
-timestamp 1717127688
+timestamp 1718246682
 transform 0 1 18285 -1 0 7644
 box -7606 -1804 7606 1804
 use sky130_fd_pr__res_high_po_0p69_WX3C5M  XR4
-timestamp 1717127688
+timestamp 1718246682
 transform 1 0 7594 0 1 14290
 box -7606 -1804 7606 1804
 << labels >>

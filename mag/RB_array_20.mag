@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1717127688
+timestamp 1718246682
 << pwell >>
 rect 1828 -194 11784 4950
 << locali >>
@@ -554,52 +554,52 @@ rect 10321 310 10785 370
 rect 10837 310 11301 370
 rect 11353 310 11359 370
 rect 2025 304 11359 310
-use sky130_fd_pr__nfet_g5v0d10v5_727CUP  XM6
-timestamp 1717127688
+use sky130_fd_pr__nfet_g5v0d10v5_727CUP  XM6 paramcells
+timestamp 1718246682
 transform 1 0 2712 0 1 563
 box -328 -735 328 735
-use sky130_fd_pr__nfet_g5v0d10v5_VU5C5A  XM7
-timestamp 1717127688
+use sky130_fd_pr__nfet_g5v0d10v5_VU5C5A  XM7 paramcells
+timestamp 1718246682
 transform 1 0 3479 0 1 573
 box -457 -745 457 745
-use sky130_fd_pr__nfet_g5v0d10v5_S7E57E  XM8
-timestamp 1717127688
+use sky130_fd_pr__nfet_g5v0d10v5_S7E57E  XM8 paramcells
+timestamp 1718246682
 transform 1 0 4633 0 1 551
 box -715 -723 715 723
-use sky130_fd_pr__nfet_g5v0d10v5_J97EKB  XM9
-timestamp 1717127688
+use sky130_fd_pr__nfet_g5v0d10v5_J97EKB  XM9 paramcells
+timestamp 1718246682
 transform 1 0 6561 0 1 524
 box -1231 -696 1231 696
-use sky130_fd_pr__nfet_g5v0d10v5_YPGNM4  XM10
-timestamp 1717127688
+use sky130_fd_pr__nfet_g5v0d10v5_YPGNM4  XM10 paramcells
+timestamp 1718246682
 transform 1 0 9779 0 1 526
 box -2005 -698 2005 698
-use sky130_fd_pr__nfet_g5v0d10v5_727CUP  XM11
-timestamp 1717127688
-transform 1 0 2186 0 1 563
+use sky130_fd_pr__nfet_g5v0d10v5_727CXJ  XM11 paramcells
+timestamp 1718246682
+transform 1 0 2176 0 1 563
 box -328 -735 328 735
-use sky130_fd_pr__res_high_po_0p69_JKKHRG  XR1
-timestamp 1717127688
+use sky130_fd_pr__res_high_po_0p69_JKKHRG  XR1 paramcells
+timestamp 1718246682
 transform 1 0 2711 0 1 3104
 box -235 -1804 235 1804
 use sky130_fd_pr__res_high_po_0p69_JKKHRG  XR2
-timestamp 1717127688
+timestamp 1718246682
 transform 1 0 2183 0 1 3104
 box -235 -1804 235 1804
-use sky130_fd_pr__res_high_po_0p69_Z3RMRJ  XR3
-timestamp 1717127688
+use sky130_fd_pr__res_high_po_0p69_Z3RMRJ  XR3 paramcells
+timestamp 1718246682
 transform 1 0 3460 0 1 3104
 box -352 -1804 352 1804
-use sky130_fd_pr__res_high_po_0p69_YMHKRJ  XR4
-timestamp 1717127688
+use sky130_fd_pr__res_high_po_0p69_YMHKRJ  XR4 paramcells
+timestamp 1718246682
 transform 1 0 4620 0 1 3104
 box -586 -1804 586 1804
-use sky130_fd_pr__res_high_po_0p69_Z3RMR6  XR5
-timestamp 1717127688
+use sky130_fd_pr__res_high_po_0p69_Z3RMR6  XR5 paramcells
+timestamp 1718246682
 transform 1 0 6542 0 1 3104
 box -1054 -1804 1054 1804
-use sky130_fd_pr__res_high_po_0p69_HBQF5Z  XR6
-timestamp 1717127688
+use sky130_fd_pr__res_high_po_0p69_HBQF5Z  XR6 paramcells
+timestamp 1718246682
 transform 1 0 9776 0 1 3104
 box -1990 -1804 1990 1804
 << labels >>
