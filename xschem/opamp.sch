@@ -224,9 +224,9 @@ nrd="'0.29 / W'" nrs="'0.29 / W'"
 sa=0 sb=0 sd=0
 model=nfet_g5v0d10v5
 spiceprefix=X}
-C {devices/ipin.sym} 960 -570 0 0 {name=p1 lab=VSS
+C {devices/iopin.sym} 960 -570 0 1 {name=p1 lab=VSS
 }
-C {devices/ipin.sym} 960 -1210 0 0 {name=p2 lab=VDD
+C {devices/iopin.sym} 960 -1210 0 1 {name=p2 lab=VDD
 }
 C {sky130_fd_pr/pfet_g5v0d10v5.sym} 1440 -1120 0 1 {name=M3
 L=1
