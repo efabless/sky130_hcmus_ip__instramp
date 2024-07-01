@@ -308,13 +308,13 @@ C {devices/ipin.sym} -1500 -60 0 0 {name=p17 lab=V1
 }
 C {devices/ipin.sym} -1500 -960 0 0 {name=p18 lab=V2
 }
-C {../xschem/opamp.sym} -1220 -940 2 1 {name=x4}
-C {../xschem/opamp.sym} -1220 -80 0 0 {name=x5}
-C {../xschem/opamp.sym} -230 -500 0 0 {name=x6}
-C {../xschem/RB_array_20.sym} -1150 -780 1 0 {name=x1}
-C {../xschem/RB_array_20.sym} -1150 -260 1 1 {name=x2}
-C {../xschem/RB_array_20.sym} -240 -930 0 1 {name=x3}
-C {../xschem/RB_array_20.sym} -240 -90 2 0 {name=x7}
+C {opamp.sym} -1220 -940 2 1 {name=x4}
+C {opamp.sym} -1220 -80 0 0 {name=x5}
+C {opamp.sym} -230 -500 0 0 {name=x6}
+C {RB_array_20.sym} -1150 -780 1 0 {name=x1}
+C {RB_array_20.sym} -1150 -260 1 1 {name=x2}
+C {RB_array_20.sym} -240 -930 0 1 {name=x3}
+C {RB_array_20.sym} -240 -90 2 0 {name=x7}
 C {devices/opin.sym} -1140 -940 3 0 {name=p38 lab=AVOUT1}
 C {devices/opin.sym} -1140 -80 1 0 {name=p39 lab=AVOUT2}
 C {devices/lab_wire.sym} -1225 -720 0 0 {name=p40 sig_type=std_logic lab=VDD}
@@ -340,11 +340,11 @@ C {devices/lab_wire.sym} -875 -1020 1 0 {name=p44 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} -875 -910 3 0 {name=p45 sig_type=std_logic lab=VSS}
 C {devices/lab_wire.sym} -875 -160 1 0 {name=p46 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} -875 -35 3 0 {name=p47 sig_type=std_logic lab=VSS}
-C {../xschem/opamp.sym} -810 -960 0 0 {name=x8}
-C {../xschem/opamp.sym} -810 -100 0 0 {name=x9}
+C {opamp.sym} -810 -960 0 0 {name=x8}
+C {opamp.sym} -810 -100 0 0 {name=x9}
 C {devices/lab_wire.sym} 105 -140 3 1 {name=p48 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 105 -15 1 1 {name=p49 sig_type=std_logic lab=VSS}
-C {../xschem/opamp.sym} 40 -80 0 1 {name=x10}
+C {opamp.sym} 40 -80 0 1 {name=x10}
 C {devices/lab_wire.sym} -110 -80 0 1 {name=p50 sig_type=std_logic lab=G}
 C {devices/iopin.sym} 260 -60 0 0 {name=p1 lab=G}
 C {amp_biases.sym} -740 -610 0 0 {name=x11}

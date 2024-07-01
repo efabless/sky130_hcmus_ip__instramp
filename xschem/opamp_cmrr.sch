@@ -102,7 +102,7 @@ spice_ignore=false}
 C {devices/lab_wire.sym} -260 -75 0 0 {name=p5 sig_type=std_logic lab=INP}
 C {devices/lab_wire.sym} -635 -90 0 0 {name=p6 sig_type=std_logic lab=INN}
 C {devices/lab_wire.sym} -635 -50 0 0 {name=p7 sig_type=std_logic lab=INP}
-C {../xschem/opamp.sym} -470 -70 0 0 {name=x1}
-C {../xschem/opamp.sym} -75 -75 0 0 {name=x2}
+C {opamp.sym} -470 -70 0 0 {name=x1}
+C {opamp.sym} -75 -75 0 0 {name=x2}
 C {sky130_fd_pr/cap_mim_m3_1.sym} 0 -20 2 0 {name=C3 model=cap_mim_m3_1 W=6.9 L=6.9 MF=5 spiceprefix=X}
 C {sky130_fd_pr/cap_mim_m3_1.sym} -410 -20 2 0 {name=C1 model=cap_mim_m3_1 W=6.9 L=6.9 MF=5 spiceprefix=X}
