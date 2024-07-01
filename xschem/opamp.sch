@@ -127,20 +127,10 @@ N 1820 -850 1820 -780 {
 lab=VOUT}
 N 1820 -1010 1820 -850 {
 lab=VOUT}
-N 1180 -1210 1180 -930 {
-lab=VDD}
-N 1180 -870 1180 -810 {
-lab=#net8}
-N 1130 -990 1130 -900 {
-lab=VDD}
-N 1130 -990 1180 -990 {
-lab=VDD}
-N 1180 -900 1240 -900 {
-lab=VSS}
-N 1240 -900 1240 -570 {
-lab=VSS}
-N 1130 -900 1140 -900 {
-lab=VDD}
+N 1140 -910 1180 -910 {
+lab=xxx}
+N 1180 -910 1180 -810 {
+lab=xxx}
 C {sky130_fd_pr/nfet_g5v0d10v5.sym} 1400 -860 0 0 {name=M2
 L=1
 W=16.5
@@ -224,9 +214,9 @@ nrd="'0.29 / W'" nrs="'0.29 / W'"
 sa=0 sb=0 sd=0
 model=nfet_g5v0d10v5
 spiceprefix=X}
-C {devices/iopin.sym} 960 -570 0 1 {name=p1 lab=VSS
+C {devices/ipin.sym} 960 -570 0 0 {name=p1 lab=VSS
 }
-C {devices/iopin.sym} 960 -1210 0 1 {name=p2 lab=VDD
+C {devices/ipin.sym} 960 -1210 0 0 {name=p2 lab=VDD
 }
 C {sky130_fd_pr/pfet_g5v0d10v5.sym} 1440 -1120 0 1 {name=M3
 L=1
@@ -270,17 +260,4 @@ spiceprefix=X
 mult=1}
 C {devices/ammeter.sym} 1530 -740 0 0 {name=V_ibias1}
 C {devices/ammeter.sym} 1820 -750 0 0 {name=V_iout}
-C {sky130_fd_pr/nfet_g5v0d10v5.sym} 1160 -900 0 0 {name=M9
-L=1
-W=0.69
-nf=1
-mult=1
-ad="'int((nf+1)/2) * W/nf * 0.29'" 
-pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
-as="'int((nf+2)/2) * W/nf * 0.29'" 
-ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
-nrd="'0.29 / W'" nrs="'0.29 / W'"
-sa=0 sb=0 sd=0
-model=nfet_g5v0d10v5
-spiceprefix=X
-}
+C {devices/ipin.sym} 1140 -910 0 0 {name=p6 lab=ibias}

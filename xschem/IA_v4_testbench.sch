@@ -254,7 +254,7 @@ C {devices/gnd.sym} 1500 -990 0 0 {name=l4 lab=GND}
 C {devices/opin.sym} 2260 -1130 0 0 {name=p1 lab=VOUT}
 C {devices/opin.sym} 2260 -1070 0 0 {name=p2 lab=VOUT1}
 C {devices/opin.sym} 2260 -1050 0 0 {name=p3 lab=VOUT2}
-C {devices/code_shown.sym} 2490 -1105 0 0 {name=s2 only_toplevel=false value=".include /foss/designs/sky130_hcmus_ip__instramp/xschem/layout/IA_v4.pex.spice
+C {devices/code_shown.sym} 2490 -1105 0 0 {name=s2 only_toplevel=false value="*.include /foss/designs/sky130_hcmus_ip__instramp/xschem/layout/IA_v4.pex.spice
 .param fin = 10K
 .control
 save all
@@ -294,5 +294,5 @@ tclcommand="xschem raw_read $netlist_dir/IA_v4_testbench.raw tran"
 }
 C {devices/lab_wire.sym} 1250 -1130 0 0 {name=p6 sig_type=std_logic lab=VSS}
 C {devices/gnd.sym} 2290 -910 0 0 {name=l5 lab=GND}
-C {/foss/designs/sky130_hcmus_ip__instramp/xschem/IA_v4.sym} 2070 -1020 0 0 {name=x1}
+C {IA_v4.sym} 2070 -1020 0 0 {name=x1}
 C {devices/lab_wire.sym} 1170 -1150 0 0 {name=p7 sig_type=std_logic lab=VDD}
