@@ -54,7 +54,7 @@ value="
 "
 spice_ignore=false}
 C {devices/gnd.sym} -180 -10 0 0 {name=l4 lab=GND}
-C {/home/caonam/OpenLane/FINALPROJECT/sky130_hcmus_ip__instramp/xschem/opamp.sym} 50 -60 0 0 {name=x1}
+C {ia_opamp.sym} 50 -60 0 0 {name=x1}
 C {devices/code_shown.sym} 210 -130 0 0 {name=s2 only_toplevel=false value=".control
 save all
 ac dec 100 1 10G

@@ -163,7 +163,7 @@ value="
 
 "
 spice_ignore=false}
-C {opamp.sym} -170 -10 0 0 {name=x1}
+C {ia_opamp.sym} -170 -10 0 0 {name=x1}
 C {devices/launcher.sym} -510 -130 0 0 {name=h5
 descr="load waves" 
 tclcommand="xschem raw_read $netlist_dir/opamp_inv.raw tran"

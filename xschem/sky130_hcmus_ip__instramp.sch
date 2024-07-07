@@ -210,29 +210,29 @@ lab=ibias4}
 N -590 -560 -560 -560 {
 lab=ibias5}
 N -1320 -880 -1320 -840 {
-lab=ibias0}
+lab=ibias1}
 N -1350 -840 -1320 -840 {
-lab=ibias0}
+lab=ibias1}
 N -330 -620 -330 -560 {
-lab=ibias4}
+lab=ibias5}
 N -350 -620 -330 -620 {
-lab=ibias4}
+lab=ibias5}
 N 140 -200 140 -140 {
-lab=ibias5}
+lab=ibias0}
 N 120 -200 140 -200 {
-lab=ibias5}
+lab=ibias0}
 N -1320 -180 -1320 -140 {
-lab=ibias1}
+lab=ibias2}
 N -1340 -180 -1320 -180 {
-lab=ibias1}
+lab=ibias2}
 N -960 -240 -960 -120 {
 lab=#net6}
 N -770 -240 -770 -100 {
 lab=#net6}
 N -910 -210 -890 -210 {
-lab=ibias3}
+lab=ibias4}
 N -910 -210 -910 -160 {
-lab=ibias3}
+lab=ibias4}
 N -960 -1120 -710 -1120 {
 lab=#net5}
 N -710 -1120 -710 -960 {
@@ -240,9 +240,9 @@ lab=#net5}
 N -960 -1120 -960 -980 {
 lab=#net5}
 N -910 -1080 -890 -1080 {
-lab=ibias2}
+lab=ibias3}
 N -910 -1080 -910 -1020 {
-lab=ibias2}
+lab=ibias3}
 N -630 -60 -630 -20 {
 lab=VSS}
 N 240 -930 270 -930 {
@@ -297,6 +297,28 @@ N 220 -1140 260 -1140 {
 lab=VDD}
 N 220 -1120 260 -1120 {
 lab=VSS}
+N 550 -930 580 -930 {
+lab=D0}
+N 550 -880 580 -880 {
+lab=D1}
+N 550 -830 580 -830 {
+lab=D2}
+N 550 -780 580 -780 {
+lab=D3}
+N 550 -730 580 -730 {
+lab=D4}
+N 550 -680 580 -680 {
+lab=D5}
+N 550 -630 580 -630 {
+lab=D6}
+N 550 -580 580 -580 {
+lab=D7}
+N 550 -530 580 -530 {
+lab=D8}
+N 550 -480 580 -480 {
+lab=D9}
+N 550 -410 580 -410 {
+lab=ena}
 C {devices/opin.sym} 20 -500 0 0 {name=p5 lab=VOUT}
 C {devices/lab_wire.sym} -1285 -140 1 0 {name=p2 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} -1285 -15 3 0 {name=p4 sig_type=std_logic lab=VSS}
@@ -308,9 +330,9 @@ C {devices/ipin.sym} -1500 -60 0 0 {name=p17 lab=V1
 }
 C {devices/ipin.sym} -1500 -960 0 0 {name=p18 lab=V2
 }
-C {opamp.sym} -1220 -940 2 1 {name=x4}
-C {opamp.sym} -1220 -80 0 0 {name=x5}
-C {opamp.sym} -230 -500 0 0 {name=x6}
+C {ia_opamp.sym} -1220 -940 2 1 {name=x4}
+C {ia_opamp.sym} -1220 -80 0 0 {name=x5}
+C {ia_opamp.sym} -230 -500 0 0 {name=x6}
 C {RB_array_20.sym} -1150 -780 1 0 {name=x1}
 C {RB_array_20.sym} -1150 -260 1 1 {name=x2}
 C {RB_array_20.sym} -240 -930 0 1 {name=x3}
@@ -340,12 +362,11 @@ C {devices/lab_wire.sym} -875 -1020 1 0 {name=p44 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} -875 -910 3 0 {name=p45 sig_type=std_logic lab=VSS}
 C {devices/lab_wire.sym} -875 -160 1 0 {name=p46 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} -875 -35 3 0 {name=p47 sig_type=std_logic lab=VSS}
-C {opamp.sym} -810 -960 0 0 {name=x8}
-C {opamp.sym} -810 -100 0 0 {name=x9}
+C {ia_opamp.sym} -810 -960 0 0 {name=x8}
+C {ia_opamp.sym} -810 -100 0 0 {name=x9}
 C {devices/lab_wire.sym} 105 -140 3 1 {name=p48 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 105 -15 1 1 {name=p49 sig_type=std_logic lab=VSS}
-C {opamp.sym} 40 -80 0 1 {name=x10}
-C {devices/lab_wire.sym} -110 -80 0 1 {name=p50 sig_type=std_logic lab=G}
+C {ia_opamp.sym} 40 -80 0 1 {name=x10}
 C {devices/iopin.sym} 260 -60 0 0 {name=p1 lab=G}
 C {amp_biases.sym} -740 -610 0 0 {name=x11}
 C {devices/lab_pin.sym} -920 -660 0 0 {name=p51 sig_type=std_logic lab=VDD}
@@ -361,12 +382,12 @@ C {devices/lab_pin.sym} -560 -580 0 1 {name=p59 sig_type=std_logic lab=ibias4
 }
 C {devices/lab_pin.sym} -560 -560 0 1 {name=p60 sig_type=std_logic lab=ibias5
 }
-C {devices/lab_pin.sym} -1350 -840 0 0 {name=p61 sig_type=std_logic lab=ibias0}
-C {devices/lab_pin.sym} -1340 -180 0 0 {name=p62 sig_type=std_logic lab=ibias1}
-C {devices/lab_pin.sym} -890 -1080 0 1 {name=p63 sig_type=std_logic lab=ibias2}
-C {devices/lab_pin.sym} -890 -210 0 1 {name=p64 sig_type=std_logic lab=ibias3}
-C {devices/lab_pin.sym} -350 -620 0 0 {name=p65 sig_type=std_logic lab=ibias4}
-C {devices/lab_pin.sym} 120 -200 0 0 {name=p66 sig_type=std_logic lab=ibias5}
+C {devices/lab_pin.sym} 120 -200 0 0 {name=p61 sig_type=std_logic lab=ibias0}
+C {devices/lab_pin.sym} -1350 -840 0 0 {name=p62 sig_type=std_logic lab=ibias1}
+C {devices/lab_pin.sym} -1340 -180 0 0 {name=p63 sig_type=std_logic lab=ibias2}
+C {devices/lab_pin.sym} -890 -1080 0 1 {name=p64 sig_type=std_logic lab=ibias3}
+C {devices/lab_pin.sym} -890 -210 0 1 {name=p65 sig_type=std_logic lab=ibias4}
+C {devices/lab_pin.sym} -350 -620 0 0 {name=p66 sig_type=std_logic lab=ibias5}
 C {devices/lab_wire.sym} -1020 -470 0 0 {name=p11 sig_type=std_logic lab=VSS}
 C {devices/lab_wire.sym} -570 -1000 0 0 {name=p12 sig_type=std_logic lab=VSS}
 C {devices/lab_wire.sym} -500 -20 0 0 {name=p13 sig_type=std_logic lab=VSS}
@@ -443,3 +464,26 @@ C {devices/iopin.sym} 220 -1140 0 1 {name=p3 lab=VDD}
 C {devices/iopin.sym} 220 -1120 0 1 {name=p6 lab=VSS}
 C {devices/lab_pin.sym} 260 -1060 0 1 {name=p73 sig_type=std_logic lab=DVSS}
 C {devices/lab_pin.sym} 260 -1080 0 1 {name=p75 sig_type=std_logic lab=DVDD}
+C {sky130_stdcells/diode_2.sym} 670 -930 0 0 {name=x23 VGND=DVSS VNB=DVSS VPB=VDD VPWR=VDD prefix=sky130_fd_sc_hvl__ }
+C {sky130_stdcells/decap_4.sym} 300 -340 0 0 {name=x24[10:0] VGND=DVSS VNB=DVSS VPB=VDD VPWR=VDD prefix=sky130_fd_sc_hvl__ }
+C {devices/lab_pin.sym} 550 -930 0 0 {name=p15 sig_type=std_logic lab=D0}
+C {sky130_stdcells/diode_2.sym} 670 -880 0 0 {name=x24 VGND=DVSS VNB=DVSS VPB=VDD VPWR=VDD prefix=sky130_fd_sc_hvl__ }
+C {devices/lab_pin.sym} 550 -880 0 0 {name=p16 sig_type=std_logic lab=D1}
+C {sky130_stdcells/diode_2.sym} 670 -830 0 0 {name=x25 VGND=DVSS VNB=DVSS VPB=VDD VPWR=VDD prefix=sky130_fd_sc_hvl__ }
+C {devices/lab_pin.sym} 550 -830 0 0 {name=p77 sig_type=std_logic lab=D2}
+C {sky130_stdcells/diode_2.sym} 670 -780 0 0 {name=x26 VGND=DVSS VNB=DVSS VPB=VDD VPWR=VDD prefix=sky130_fd_sc_hvl__ }
+C {devices/lab_pin.sym} 550 -780 0 0 {name=p79 sig_type=std_logic lab=D3}
+C {sky130_stdcells/diode_2.sym} 670 -730 0 0 {name=x27 VGND=DVSS VNB=DVSS VPB=VDD VPWR=VDD prefix=sky130_fd_sc_hvl__ }
+C {devices/lab_pin.sym} 550 -730 0 0 {name=p81 sig_type=std_logic lab=D4}
+C {sky130_stdcells/diode_2.sym} 670 -680 0 0 {name=x28 VGND=DVSS VNB=DVSS VPB=VDD VPWR=VDD prefix=sky130_fd_sc_hvl__ }
+C {devices/lab_pin.sym} 550 -680 0 0 {name=p83 sig_type=std_logic lab=D5}
+C {sky130_stdcells/diode_2.sym} 670 -630 0 0 {name=x29 VGND=DVSS VNB=DVSS VPB=VDD VPWR=VDD prefix=sky130_fd_sc_hvl__ }
+C {devices/lab_pin.sym} 550 -630 0 0 {name=p85 sig_type=std_logic lab=D6}
+C {sky130_stdcells/diode_2.sym} 670 -580 0 0 {name=x30 VGND=DVSS VNB=DVSS VPB=VDD VPWR=VDD prefix=sky130_fd_sc_hvl__ }
+C {devices/lab_pin.sym} 550 -580 0 0 {name=p87 sig_type=std_logic lab=D7}
+C {sky130_stdcells/diode_2.sym} 670 -530 0 0 {name=x31 VGND=DVSS VNB=DVSS VPB=VDD VPWR=VDD prefix=sky130_fd_sc_hvl__ }
+C {devices/lab_pin.sym} 550 -530 0 0 {name=p101 sig_type=std_logic lab=D8}
+C {sky130_stdcells/diode_2.sym} 670 -480 0 0 {name=x32 VGND=DVSS VNB=DVSS VPB=VDD VPWR=VDD prefix=sky130_fd_sc_hvl__ }
+C {devices/lab_pin.sym} 550 -480 0 0 {name=p102 sig_type=std_logic lab=D9}
+C {sky130_stdcells/diode_2.sym} 670 -410 0 0 {name=x33 VGND=DVSS VNB=DVSS VPB=VDD VPWR=VDD prefix=sky130_fd_sc_hvl__ }
+C {devices/lab_pin.sym} 550 -410 0 0 {name=p103 sig_type=std_logic lab=ena}

@@ -118,7 +118,7 @@ dc V1 -1.8 1.8 1m
 write opamp_icmr.raw
 .endc
 "}
-C {/home/caonam/OpenLane/FINALPROJECT/sky130_hcmus_ip__instramp/xschem/opamp.sym} -320 -140 0 0 {name=x1}
+C {ia_opamp.sym} -320 -140 0 0 {name=x1}
 C {devices/vsource.sym} -650 -120 1 0 {name=V1 value="SIN (0 10u 50K)" savecurrent=false}
 C {devices/launcher.sym} -590 -340 0 0 {name=h5
 descr="load waves" 

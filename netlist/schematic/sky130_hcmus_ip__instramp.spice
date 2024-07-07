@@ -1,0 +1,128 @@
+** sch_path: /home/tim/gits/cheetah_v3_analog/dependencies/sky130_hcmus_ip__instramp/xschem/sky130_hcmus_ip__instramp.sch
+.subckt sky130_hcmus_ip__instramp VDD VSS G V1 V2 D0 D1 D2 D3 D4 D5 D6 D7 D8 D9 AVOUT1 AVOUT2 VOUT ibias ena DVDD DVSS
+*.PININFO VOUT:O V1:I V2:I AVOUT1:O AVOUT2:O G:B DVDD:B DVSS:B D4:I D3:I D2:I D1:I D0:I D9:I D8:I D7:I D6:I D5:I ibias:I ena:I
+*+ VDD:B VSS:B
+x4 VDD VSS V2 net3 AVOUT1 ibias1 ia_opamp
+x5 VDD VSS V1 net4 AVOUT2 ibias2 ia_opamp
+x6 VDD VSS net2 net1 VOUT ibias5 ia_opamp
+x1 VSS net3 AVOUT1 D03v3 D13v3 D23v3 D33v3 D43v3 VDD RB_array_20
+x2 VSS net4 AVOUT2 D03v3 D13v3 D23v3 D33v3 D43v3 VDD RB_array_20
+x3 VSS net1 VOUT D53v3 D63v3 D73v3 D83v3 D93v3 VDD RB_array_20
+x7 VSS net2 net5 D53v3 D63v3 D73v3 D83v3 D93v3 VDD RB_array_20
+XR4 net6 net1 VSS sky130_fd_pr__res_high_po_0p69 L=12.22 mult=64 m=64
+XR1 net3 net4 VSS sky130_fd_pr__res_high_po_0p69 L=12.22 mult=64 m=64
+XR2 net2 net7 VSS sky130_fd_pr__res_high_po_0p69 L=12.22 mult=64 m=64
+x8 VDD VSS AVOUT1 net6 net6 ibias3 ia_opamp
+x9 VDD VSS AVOUT2 net7 net7 ibias4 ia_opamp
+x10 VDD VSS G net5 net5 ibias0 ia_opamp
+x11 VDD ibias ena3v3 ibias1 ibias5 ibias2 ibias4 ibias3 ibias0 VSS amp_biases
+x12 D0 DVDD DVSS DVSS VDD VDD D03v3 sky130_fd_sc_hvl__lsbuflv2hv_1
+x13 D1 DVDD DVSS DVSS VDD VDD D13v3 sky130_fd_sc_hvl__lsbuflv2hv_1
+x14 D2 DVDD DVSS DVSS VDD VDD D23v3 sky130_fd_sc_hvl__lsbuflv2hv_1
+x15 D3 DVDD DVSS DVSS VDD VDD D33v3 sky130_fd_sc_hvl__lsbuflv2hv_1
+x16 D4 DVDD DVSS DVSS VDD VDD D43v3 sky130_fd_sc_hvl__lsbuflv2hv_1
+x17 D5 DVDD DVSS DVSS VDD VDD D53v3 sky130_fd_sc_hvl__lsbuflv2hv_1
+x18 D6 DVDD DVSS DVSS VDD VDD D63v3 sky130_fd_sc_hvl__lsbuflv2hv_1
+x19 D7 DVDD DVSS DVSS VDD VDD D73v3 sky130_fd_sc_hvl__lsbuflv2hv_1
+x20 D8 DVDD DVSS DVSS VDD VDD D83v3 sky130_fd_sc_hvl__lsbuflv2hv_1
+x21 D9 DVDD DVSS DVSS VDD VDD D93v3 sky130_fd_sc_hvl__lsbuflv2hv_1
+x22 ena DVDD DVSS DVSS VDD VDD ena3v3 sky130_fd_sc_hvl__lsbuflv2hv_1
+x23 D0 DVSS DVSS VDD VDD sky130_fd_sc_hvl__diode_2
+x24[10] DVSS DVSS VDD VDD sky130_fd_sc_hvl__decap_4
+x24[9] DVSS DVSS VDD VDD sky130_fd_sc_hvl__decap_4
+x24[8] DVSS DVSS VDD VDD sky130_fd_sc_hvl__decap_4
+x24[7] DVSS DVSS VDD VDD sky130_fd_sc_hvl__decap_4
+x24[6] DVSS DVSS VDD VDD sky130_fd_sc_hvl__decap_4
+x24[5] DVSS DVSS VDD VDD sky130_fd_sc_hvl__decap_4
+x24[4] DVSS DVSS VDD VDD sky130_fd_sc_hvl__decap_4
+x24[3] DVSS DVSS VDD VDD sky130_fd_sc_hvl__decap_4
+x24[2] DVSS DVSS VDD VDD sky130_fd_sc_hvl__decap_4
+x24[1] DVSS DVSS VDD VDD sky130_fd_sc_hvl__decap_4
+x24[0] DVSS DVSS VDD VDD sky130_fd_sc_hvl__decap_4
+x24 D1 DVSS DVSS VDD VDD sky130_fd_sc_hvl__diode_2
+x25 D2 DVSS DVSS VDD VDD sky130_fd_sc_hvl__diode_2
+x26 D3 DVSS DVSS VDD VDD sky130_fd_sc_hvl__diode_2
+x27 D4 DVSS DVSS VDD VDD sky130_fd_sc_hvl__diode_2
+x28 D5 DVSS DVSS VDD VDD sky130_fd_sc_hvl__diode_2
+x29 D6 DVSS DVSS VDD VDD sky130_fd_sc_hvl__diode_2
+x30 D7 DVSS DVSS VDD VDD sky130_fd_sc_hvl__diode_2
+x31 D8 DVSS DVSS VDD VDD sky130_fd_sc_hvl__diode_2
+x32 D9 DVSS DVSS VDD VDD sky130_fd_sc_hvl__diode_2
+x33 ena DVSS DVSS VDD VDD sky130_fd_sc_hvl__diode_2
+.ends
+
+* expanding   symbol:  ia_opamp.sym # of pins=6
+** sym_path: /home/tim/gits/cheetah_v3_analog/dependencies/sky130_hcmus_ip__instramp/xschem/ia_opamp.sym
+** sch_path: /home/tim/gits/cheetah_v3_analog/dependencies/sky130_hcmus_ip__instramp/xschem/ia_opamp.sch
+.subckt ia_opamp VDD VSS V1 V2 VOUT ibias
+*.PININFO VSS:I VDD:I V2:I V1:I VOUT:O ibias:I
+XM2 net2 V2 net1 VSS sky130_fd_pr__nfet_g5v0d10v5 L=1 W=16.5 nf=1 m=1
+XM1 net3 net2 VDD VDD sky130_fd_pr__pfet_g5v0d10v5 L=1 W=30 nf=2 m=1
+XM4 net3 V1 net1 VSS sky130_fd_pr__nfet_g5v0d10v5 L=1 W=16.5 nf=1 m=1
+XM5 net6 net4 VSS VSS sky130_fd_pr__nfet_g5v0d10v5 L=1 W=15.44 nf=1 m=1
+XM6 net7 net4 VSS VSS sky130_fd_pr__nfet_g5v0d10v5 L=1 W=19 nf=1 m=1
+XM7 net4 net4 VSS VSS sky130_fd_pr__nfet_g5v0d10v5 L=1 W=15.44 nf=1 m=1
+XM3 net2 net2 VDD VDD sky130_fd_pr__pfet_g5v0d10v5 L=1 W=30 nf=2 m=1
+XM8 VOUT net3 VDD VDD sky130_fd_pr__pfet_g5v0d10v5 L=1 W=76 nf=4 m=1
+XC1 net5 net3 sky130_fd_pr__cap_mim_m3_1 W=6.9 L=6.9 m=1
+V_ibias ibias net4 0
+.save i(v_ibias)
+XR3 net5 VOUT VSS sky130_fd_pr__res_high_po_0p69 L=3.2 mult=1 m=1
+V_ibias1 net1 net6 0
+.save i(v_ibias1)
+V_iout VOUT net7 0
+.save i(v_iout)
+.ends
+
+
+* expanding   symbol:  RB_array_20.sym # of pins=9
+** sym_path: /home/tim/gits/cheetah_v3_analog/dependencies/sky130_hcmus_ip__instramp/xschem/RB_array_20.sym
+** sch_path: /home/tim/gits/cheetah_v3_analog/dependencies/sky130_hcmus_ip__instramp/xschem/RB_array_20.sch
+.subckt RB_array_20 VSS R1 R2 D0 D1 D2 D3 D4 VDD
+*.PININFO VSS:I R2:B D0:I D1:I D2:I D3:I D4:I R1:B VDD:I
+XR2 net6 R2 VSS sky130_fd_pr__res_high_po_0p69 L=12.22 mult=1 m=1
+XR1 net1 R2 VSS sky130_fd_pr__res_high_po_0p69 L=12.22 mult=1 m=1
+XR3 net5 R2 VSS sky130_fd_pr__res_high_po_0p69 L=12.22 mult=2 m=2
+XR4 net4 R2 VSS sky130_fd_pr__res_high_po_0p69 L=12.22 mult=4 m=4
+XR5 net3 R2 VSS sky130_fd_pr__res_high_po_0p69 L=12.22 mult=8 m=8
+XR6 net2 R2 VSS sky130_fd_pr__res_high_po_0p69 L=12.22 mult=16 m=16
+XM6 net8 D0 net1 VSS sky130_fd_pr__nfet_g5v0d10v5 L=1 W=4.77 nf=1 m=1
+XM7 net12 D1 net5 VSS sky130_fd_pr__nfet_g5v0d10v5 L=1 W=9.74 nf=2 m=1
+XM8 net9 D2 net4 VSS sky130_fd_pr__nfet_g5v0d10v5 L=1 W=18.60 nf=4 m=1
+XM9 net10 D3 net3 VSS sky130_fd_pr__nfet_g5v0d10v5 L=1 W=35.04 nf=8 m=1
+XM10 net11 D4 net2 VSS sky130_fd_pr__nfet_g5v0d10v5 L=1 W=61.60 nf=14 m=1
+XM11 net7 VDD net6 VSS sky130_fd_pr__nfet_g5v0d10v5 L=1 W=4.77 nf=1 m=1
+Vmeas R1 net7 0
+.save i(vmeas)
+Vmeas1 R1 net8 0
+.save i(vmeas1)
+Vmeas2 R1 net12 0
+.save i(vmeas2)
+Vmeas3 R1 net9 0
+.save i(vmeas3)
+Vmeas4 R1 net10 0
+.save i(vmeas4)
+Vmeas5 R1 net11 0
+.save i(vmeas5)
+.ends
+
+
+* expanding   symbol:  amp_biases.sym # of pins=10
+** sym_path: /home/tim/gits/cheetah_v3_analog/dependencies/sky130_hcmus_ip__instramp/xschem/amp_biases.sym
+** sch_path: /home/tim/gits/cheetah_v3_analog/dependencies/sky130_hcmus_ip__instramp/xschem/amp_biases.sch
+.subckt amp_biases VDD ibias ena3v3 ibias1 ibias5 ibias2 ibias4 ibias3 ibias0 VSS
+*.PININFO VSS:I VDD:I ibias:I ena3v3:I ibias0:O ibias1:O ibias2:O ibias3:O ibias4:O ibias5:O
+XM1 ibias0 net2 VDD VDD sky130_fd_pr__pfet_g5v0d10v5 L=1 W=30 nf=2 m=1
+XM7 net1 net1 VSS VSS sky130_fd_pr__nfet_g5v0d10v5 L=1 W=15.44 nf=1 m=1
+XM3 net2 net2 VDD VDD sky130_fd_pr__pfet_g5v0d10v5 L=1 W=2 nf=2 m=1
+XM2 net3 net1 VSS VSS sky130_fd_pr__nfet_g5v0d10v5 L=1 W=15.44 nf=1 m=1
+XM4 ibias1 net2 VDD VDD sky130_fd_pr__pfet_g5v0d10v5 L=1 W=30 nf=2 m=1
+XM5 ibias2 net2 VDD VDD sky130_fd_pr__pfet_g5v0d10v5 L=1 W=30 nf=2 m=1
+XM6 ibias3 net2 VDD VDD sky130_fd_pr__pfet_g5v0d10v5 L=1 W=30 nf=2 m=1
+XM8 ibias4 net2 VDD VDD sky130_fd_pr__pfet_g5v0d10v5 L=1 W=30 nf=2 m=1
+XM9 ibias5 net2 VDD VDD sky130_fd_pr__pfet_g5v0d10v5 L=1 W=30 nf=2 m=1
+XM11 net2 ena3v3 net3 VSS sky130_fd_pr__nfet_g5v0d10v5 L=1 W=15.44 nf=1 m=1
+XM10 ibias ena3v3 net1 VSS sky130_fd_pr__nfet_g5v0d10v5 L=1 W=15.44 nf=1 m=1
+.ends
+
+.end

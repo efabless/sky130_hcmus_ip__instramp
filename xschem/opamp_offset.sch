@@ -131,8 +131,8 @@ value="
 
 "
 spice_ignore=false}
-C {opamp.sym} -255 -465 0 0 {name=x1}
-C {opamp.sym} -265 -205 0 0 {name=x2}
+C {ia_opamp.sym} -255 -465 0 0 {name=x1}
+C {ia_opamp.sym} -265 -205 0 0 {name=x2}
 C {devices/launcher.sym} -160 -270 0 0 {name=h5
 descr="load waves" 
 tclcommand="xschem raw_read $netlist_dir/opamp_offset.raw dc"

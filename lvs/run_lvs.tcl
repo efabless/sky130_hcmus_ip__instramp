@@ -1,4 +1,5 @@
 # Tcl script to run LVS on the HCMUS INSTRAMP
+
 if {[catch {set PDK_ROOT $::env(PDK_ROOT)}]} {set PDK_ROOT /usr/local/share/pdk}
 if {[catch {set PDK $::env(PDK)}]} {set PDK sky130A}
 
