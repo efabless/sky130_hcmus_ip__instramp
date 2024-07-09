@@ -150,7 +150,7 @@ C {devices/vsource.sym} -840 250 0 0 {name=Vvdd value="DC \{Vvdd\}" savecurrent=
 C {devices/code_shown.sym} 90 -610 0 0 {name=CONTROL only_toplevel=false value=".control
 op
 set wr_singlescale
-wrdata \{simpath\}/\{filename\}_\{N\}.data -I\{Vvdd\}
+wrdata \{simpath\}/\{filename\}_\{N\}.data -I(Vvdd)
 quit
 .endc
 "}
@@ -161,6 +161,7 @@ C {devices/code_shown.sym} -1000 -580 0 0 {name=SETUP only_toplevel=false value=
 .include \{DUT_path\}
 
 .lib \{PDK_ROOT\}/\{PDK\}/libs.tech/combined/sky130.lib.spice \{corner\}
+.include \{PDK_ROOT\}/\{PDK\}/libs.ref/sky130_fd_sc_hvl/spice/sky130_fd_sc_hvl.spice
 
 .option TEMP=\{temperature\}
 * Flag unsafe operating conditions (exceeds models' specified limits)

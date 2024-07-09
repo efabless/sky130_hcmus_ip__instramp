@@ -142,7 +142,7 @@ default_conditions:
   D[9:0]:
     description: Programmable gain value
     display: D[9:0]
-    typical: 000000000
+    typical: '000000000'
   ena:
     description: Amplifier enable
     display: ena
@@ -195,7 +195,7 @@ electrical_parameters:
         format: ascii
         suffix: .data
         variables:
-        - null
+        - 'null'
         - result
     conditions:
       Vvdd:
@@ -226,7 +226,7 @@ electrical_parameters:
         format: ascii
         suffix: .data
         variables:
-        - null
+        - 'null'
         - result
     conditions:
       Vvdd:
@@ -262,7 +262,7 @@ electrical_parameters:
         format: ascii
         suffix: .data
         variables:
-        - null
+        - 'null'
         - result
     conditions:
       Vvdd:
@@ -357,7 +357,7 @@ electrical_parameters:
         suffix: .data
         variables:
         - result
-        - null
+        - 'null'
     conditions:
       Vvdd:
         typical: 3.3
@@ -434,8 +434,8 @@ electrical_parameters:
         suffix: .data
         variables:
         - result
-        - null
-        - null
+        - 'null'
+        - 'null'
     conditions:
       Vvdd:
         typical: 3.3
@@ -473,7 +473,7 @@ electrical_parameters:
         suffix: .data
         variables:
         - result
-        - null
+        - 'null'
     conditions:
       Vvdd:
         typical: 3.3
@@ -510,7 +510,7 @@ electrical_parameters:
         suffix: .data
         variables:
         - result
-        - null
+        - 'null'
     conditions:
       Vvdd:
         typical: 3.3
@@ -543,7 +543,7 @@ electrical_parameters:
         format: ascii
         suffix: .data
         variables:
-        - null
+        - 'null'
         - result
     conditions:
       Vvdd:
@@ -577,9 +577,9 @@ electrical_parameters:
         format: ascii
         suffix: .data
         variables:
-        - null
+        - 'null'
         - result
-        - null
+        - 'null'
     conditions:
       Vvdd:
         typical: 3.3
@@ -614,8 +614,8 @@ electrical_parameters:
         format: ascii
         suffix: .data
         variables:
-        - null
-        - null
+        - 'null'
+        - 'null'
         - result
     conditions:
       Vvdd:
