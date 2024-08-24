@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1720370181
+timestamp 1724461285
 << dnwell >>
 rect -520 -10586 20480 20584
 << nwell >>
@@ -17,7 +17,9 @@ rect 16481 -53 20102 -37
 rect 49 -1608 20106 -53
 rect 9975 -10266 10165 -1608
 << mvpsubdiff >>
-rect -879 20025 -771 20049
+rect -879 20042 -771 20049
+rect -1056 20025 -771 20042
+rect -1056 -10538 -879 20025
 rect -879 -10571 -771 -10547
 << mvnsubdiff >>
 rect -563 20607 20523 20627
@@ -1586,22 +1588,22 @@ transform 1 0 -3812 0 1 -243
 box 3810 247 7000 9177
 use sky130_fd_sc_hvl__decap_4  sky130_fd_sc_hvl__decap_4_0 $PDKPATH/libs.ref/sky130_fd_sc_hvl/mag
 array 0 10 -2496 0 0 940
-timestamp 1715205430
+timestamp 1723858470
 transform 0 1 -2684 -1 0 -7909
 box -66 -43 450 897
 use sky130_fd_sc_hvl__diode_2  sky130_fd_sc_hvl__diode_2_0 $PDKPATH/libs.ref/sky130_fd_sc_hvl/mag
 array 0 10 -2496 0 0 -940
-timestamp 1715205430
+timestamp 1723858470
 transform 0 -1 -1056 -1 0 -8101
 box -66 -43 258 897
 use sky130_fd_sc_hvl__fill_2  sky130_fd_sc_hvl__fill_2_0 $PDKPATH/libs.ref/sky130_fd_sc_hvl/mag
 array 0 10 -2496 0 0 -940
-timestamp 1715205430
+timestamp 1723858470
 transform 0 -1 -1056 -1 0 -7909
 box -66 -43 258 897
 use sky130_fd_sc_hvl__lsbuflv2hv_1  sky130_fd_sc_hvl__lsbuflv2hv_1_0 $PDKPATH/libs.ref/sky130_fd_sc_hvl/mag
 array 0 10 -2496 0 0 1714
-timestamp 1715205430
+timestamp 1723858470
 transform 0 1 -2684 -1 0 -8293
 box -66 -43 2178 1671
 use RB_array_20  x1
